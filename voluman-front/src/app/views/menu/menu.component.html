@@ -1,3 +1,47 @@
-<button type="button" class="btn">Lista Twoich akcji</button>
-<button type="button" class="btn">Twoja Dostepność</button>
-<button type="button" class="btn">Base class</button>
+<app-breadcrumb [path]=path></app-breadcrumb>
+<div class="container mt-lg-5 w-50">
+
+  <div class="row align-items-center">
+    <div class="col">
+      <button type="button" class="btn btn-outline-dark menu-btn">
+        <div class="btn-icon-row row">
+          <i class="bi bi-list-check btn-icon"></i></div>
+        <div class="btn-text">
+          Lista Twoich akcji
+        </div>
+      </button>
+
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-outline-dark menu-btn" (click)="onAvailabilityClick()">
+        <div class="btn-icon-row row">
+          <i class="bi bi-calendar-week btn-icon"></i></div>
+        <div class="btn-text">
+          <span>Twoja Dostepność</span>
+        </div>
+      </button>
+
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-outline-dark menu-btn">
+        <div class=" row btn-icon-row">
+          <i class="bi bi-calendar-week btn-icon"></i></div>
+        <div class="btn-text ">
+          <span>Plan tygodnia</span>
+        </div>
+      </button>
+
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-outline-dark menu-btn">
+        <div class="btn-icon-row row ">
+          <i class="bi bi-person-fill btn-icon"></i></div>
+        <div class="btn-text  ">
+          <span>Twoje dane</span>
+        </div>
+      </button>
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,37 @@
+{
+    "users": [
+        {
+            "id": "92774c52-f4fa-11ed-a05b-0242ac120003",
+            "name": "Barbara",
+            "surname": "Nowak",
+            "nickName": "BB",
+            "phone": "555555555",
+            "email": "barbara.nowak@b.pl",
+            "contact": "sms",
+            "password": "barbaranowak",
+            "role": "lider"
+        },
+        {
+            "id": "a1252a12-f4fa-11ed-a05b-0242ac120003",
+            "name": "Jan",
+            "surname": "Nowak",
+            "nickName": "JN",
+            "phone": "555555555",
+            "email": "jan.nowak@b.pl",
+            "contact": "sms",
+            "password": "jannowak",
+            "role": "volonteer"
+        },
+        {
+            "id": "b9c7f5b8-f4fa-11ed-a05b-0242ac120003",
+            "name": "Anna",
+            "surname": "Kowalska",
+            "nickName": "AK",
+            "phone": "555555555",
+            "email": "anna.kowalska@b.pl",
+            "contact": "sms",
+            "password": "annakowalska",
+            "role": "volonteer"
+        }
+    ]
+}

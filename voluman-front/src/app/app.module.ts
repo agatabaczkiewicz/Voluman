@@ -12,6 +12,12 @@ import { LoginComponent } from './views/login/login.component';
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import { FontAwesomeModule, FaIconLibrary  } from '@fortawesome/angular-fontawesome';
+import { CalendarCellComponent } from './components/calendar-cell/calendar-cell.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -22,7 +28,12 @@ export function HttpLoaderFactory(http: HttpClient) {
     MenuComponent,
     ScheduleComponent,
     AvailabilityComponent,
-    LoginComponent
+    LoginComponent,
+    CalendarCellComponent,
+    HeaderComponent,
+    FooterComponent,
+    BreadcrumbComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -34,6 +45,9 @@ export function HttpLoaderFactory(http: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }}),
+    FontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

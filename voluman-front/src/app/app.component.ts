@@ -1,16 +1,29 @@
-import { Component } from '@angular/core';
+import {Component, OnDestroy} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
+import {JsonFilesService} from "./components/services/json-files.service";
+import {StorageService} from "./components/services/storage.service";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnDestroy{
   title = 'voluman-front';
-  constructor(translate: TranslateService) {
+  path=["Główne menu","Dostępność"];
+  constructor(translate: TranslateService,
+              private jsonFilesService: JsonFilesService,
+              private storageService: StorageService){
     translate.addLangs(['en', 'klingon']);
     translate.setDefaultLang('en');
     translate.use('en');
+    this.jsonFilesService.getDataFromFiles();
+  }
+
+  changeLanguage(){
+
+  }
+  ngOnDestroy() {
+    this.storageService.clearData();
   }
 }

@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="container mt-lg-5 w-25">
+  <div class="row justify-content-around">
+    <button class="btn btn-primary w-75" type="button" (click)="onGuest()">Wejdź jako Gość</button>
+    <div class="col align-self-center mt-lg-5">
+      <div class="card">
+        <h4 class="card-title text-center mt-3">Zaloguj się </h4>
+        <div class="card-body ">
+          <form id="loginForm">
+            <div class="form mb-3 ">
+              <label  class="col-form-label">Adres email</label>
+              <input type="text" [formControl]="login" class="form-control" name="login" >
+              <label  class="col-form-label">Hasło</label>
+              <input type="password" [formControl]="password"  name="password" class="form-control" >
+            </div>
+            <button class="btn btn-primary" type="button" (click)="onLogIn()">Zaloguj się</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

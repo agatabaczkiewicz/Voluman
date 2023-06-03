@@ -1,0 +1,35 @@
+.menu-btn{
+  width:10rem;
+  height: 12rem;
+  //display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-icon-row{
+  //transform: scale(6);
+  //display: inline-block !important;
+  //vertical-align:middle;
+  //align-self: start;
+  //top:0px;
+  //position: absolute;
+  //top:20px;
+  //margin: 0 auto;
+  height: 65%;
+  margin-bottom: 10px;
+  text-align:center;
+}
+.btn-icon{
+  font-size: 6rem;
+}
+.btn-text{
+  font-size: large;
+  font-weight: bolder;
+  //display: inline-block;
+  margin-bottom: 5px;
+  //margin-top: 1rem;
+  align-self: flex-end;
+  bottom: 0;
+  text-align:center;
+}
