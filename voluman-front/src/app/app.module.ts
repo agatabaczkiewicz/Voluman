@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +18,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { ModalButtonMenuComponent } from './components/modal-button-menu/modal-button-menu.component';
+import { MaxWeekHoursComponent } from './views/max-week-hours/max-week-hours.component';
+import '@angular/common/locales/global/pl';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -33,6 +36,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     FooterComponent,
     BreadcrumbComponent,
+    ModalButtonMenuComponent,
+    MaxWeekHoursComponent,
 
   ],
   imports: [
@@ -49,7 +54,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'pl-PL' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

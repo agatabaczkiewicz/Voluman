@@ -9,62 +9,62 @@
                     "startTime": "08:00:00",
                     "endTime": "9:00:00",
                     "isShift": "false",
-                    "volonteer": "null",
+                    "volunteer": "null",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "9:00:00",
                     "endTime": "10:00:00",
                     "isShift": "false",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "10:00:00",
                     "endTime": "11:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "11:00:00",
                     "endTime": "12:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "12:00:00",
                     "endTime": "13:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "13:00:00",
                     "endTime": "14:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "14:00:00",
                     "endTime": "15:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "15:00:00",
                     "endTime": "16:00:00",
                     "isShift": "true",
-                    "volonteer": "JN"
+                    "volunteer": "JN"
                 },
                 {
                     "startTime": "16:00:00",
                     "endTime": "17:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 }
             ]
@@ -76,62 +76,62 @@
                     "startTime": "08:00:00",
                     "endTime": "9:00:00",
                     "isShift": "false",
-                    "volonteer": "null",
+                    "volunteer": "null",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "9:00:00",
                     "endTime": "10:00:00",
                     "isShift": "false",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "10:00:00",
                     "endTime": "11:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "11:00:00",
                     "endTime": "12:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "12:00:00",
                     "endTime": "13:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "13:00:00",
                     "endTime": "14:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "14:00:00",
                     "endTime": "15:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "15:00:00",
                     "endTime": "16:00:00",
                     "isShift": "true",
-                    "volonteer": "JN"
+                    "volunteer": "JN"
                 },
                 {
                     "startTime": "16:00:00",
                     "endTime": "17:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 }
             ]
@@ -143,62 +143,62 @@
                     "startTime": "08:00:00",
                     "endTime": "9:00:00",
                     "isShift": "false",
-                    "volonteer": "null",
+                    "volunteer": "null",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "9:00:00",
                     "endTime": "10:00:00",
                     "isShift": "false",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "10:00:00",
                     "endTime": "11:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "11:00:00",
                     "endTime": "12:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "12:00:00",
                     "endTime": "13:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "13:00:00",
                     "endTime": "14:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "14:00:00",
                     "endTime": "15:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "15:00:00",
                     "endTime": "16:00:00",
                     "isShift": "true",
-                    "volonteer": "JN"
+                    "volunteer": "JN"
                 },
                 {
                     "startTime": "16:00:00",
                     "endTime": "17:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 }
             ]
@@ -210,62 +210,62 @@
                     "startTime": "08:00:00",
                     "endTime": "9:00:00",
                     "isShift": "false",
-                    "volonteer": "null",
+                    "volunteer": "null",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "9:00:00",
                     "endTime": "10:00:00",
                     "isShift": "false",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "10:00:00",
                     "endTime": "11:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "11:00:00",
                     "endTime": "12:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "12:00:00",
                     "endTime": "13:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "13:00:00",
                     "endTime": "14:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "14:00:00",
                     "endTime": "15:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "15:00:00",
                     "endTime": "16:00:00",
                     "isShift": "true",
-                    "volonteer": "JN"
+                    "volunteer": "JN"
                 },
                 {
                     "startTime": "16:00:00",
                     "endTime": "17:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 }
             ]
@@ -277,62 +277,62 @@
                     "startTime": "08:00:00",
                     "endTime": "9:00:00",
                     "isShift": "false",
-                    "volonteer": "null",
+                    "volunteer": "null",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "9:00:00",
                     "endTime": "10:00:00",
                     "isShift": "false",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "10:00:00",
                     "endTime": "11:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "11:00:00",
                     "endTime": "12:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "12:00:00",
                     "endTime": "13:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "13:00:00",
                     "endTime": "14:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "14:00:00",
                     "endTime": "15:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "15:00:00",
                     "endTime": "16:00:00",
                     "isShift": "true",
-                    "volonteer": "JN"
+                    "volunteer": "JN"
                 },
                 {
                     "startTime": "16:00:00",
                     "endTime": "17:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 }
             ]
@@ -344,65 +344,132 @@
                     "startTime": "08:00:00",
                     "endTime": "9:00:00",
                     "isShift": "false",
-                    "volonteer": "null",
+                    "volunteer": "null",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "9:00:00",
                     "endTime": "10:00:00",
                     "isShift": "false",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "10:00:00",
                     "endTime": "11:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "11:00:00",
                     "endTime": "12:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "12:00:00",
                     "endTime": "13:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "13:00:00",
                     "endTime": "14:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "14:00:00",
                     "endTime": "15:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 },
                 {
                     "startTime": "15:00:00",
                     "endTime": "16:00:00",
                     "isShift": "true",
-                    "volonteer": "JN"
+                    "volunteer": "JN"
                 },
                 {
                     "startTime": "16:00:00",
                     "endTime": "17:00:00",
                     "isShift": "true",
-                    "volonteer": "JN",
+                    "volunteer": "JN",
                     "shortName": "Pacz"
                 }
             ]
-        }
+        },
+      {
+        "date": "28-05-2023",
+        "slots": [
+          {
+            "startTime": "08:00:00",
+            "endTime": "9:00:00",
+            "isShift": "false",
+            "volunteer": "null",
+            "shortName": "Pacz"
+          },
+          {
+            "startTime": "9:00:00",
+            "endTime": "10:00:00",
+            "isShift": "false",
+            "volunteer": "JN",
+            "shortName": "Pacz"
+          },
+          {
+            "startTime": "10:00:00",
+            "endTime": "11:00:00",
+            "isShift": "true",
+            "volunteer": "JN",
+            "shortName": "Pacz"
+          },
+          {
+            "startTime": "11:00:00",
+            "endTime": "12:00:00",
+            "isShift": "true",
+            "volunteer": "JN",
+            "shortName": "Pacz"
+          },
+          {
+            "startTime": "12:00:00",
+            "endTime": "13:00:00",
+            "isShift": "true",
+            "volunteer": "JN",
+            "shortName": "Pacz"
+          },
+          {
+            "startTime": "13:00:00",
+            "endTime": "14:00:00",
+            "isShift": "true",
+            "volunteer": "JN",
+            "shortName": "Pacz"
+          },
+          {
+            "startTime": "14:00:00",
+            "endTime": "15:00:00",
+            "isShift": "true",
+            "volunteer": "JN",
+            "shortName": "Pacz"
+          },
+          {
+            "startTime": "15:00:00",
+            "endTime": "16:00:00",
+            "isShift": "true",
+            "volunteer": "JN"
+          },
+          {
+            "startTime": "16:00:00",
+            "endTime": "17:00:00",
+            "isShift": "true",
+            "volunteer": "JN",
+            "shortName": "Pacz"
+          }
+        ]
+      }
     ]
 }

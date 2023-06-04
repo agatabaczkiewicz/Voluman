@@ -1,0 +1,17 @@
+.stripes {
+  background: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 5px,
+      #6495ED 5px,
+      #6495ED 10px
+  );
+}
+
+.square {
+  height: 20px;
+  width: 35px;
+  background-color: transparent;
+  margin-bottom: 5px;
+  border:1px solid #000;
+}

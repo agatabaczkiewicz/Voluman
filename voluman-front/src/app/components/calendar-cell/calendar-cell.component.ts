@@ -13,14 +13,14 @@ export class CalendarCellComponent implements OnInit{
   @Output()wasClickEmit = new EventEmitter<boolean>();
   content='';
   style = 'transparent'
-
+  striped='repeating-linear-gradient(180deg,transparent,transparent 3.75px,#6495ED 3.75px,#6495ED 7.5px)'
   onCellClick(event:any) {
-    if(this.content=='') {
-      if (this.style == 'red') {
+
+      if (this.style == this.striped) {
         this.style = 'transparent';
       } else {
-        this.style = 'red';
-      }
+        this.style = this.striped;
+
       if(event.shiftKey){
         this.wasClickEmit.emit(true);
       }
@@ -28,9 +28,7 @@ export class CalendarCellComponent implements OnInit{
   }
   over(event:any) {
     if (event.shiftKey && this.wasClick) {
-      if(this.content=='') {
-        this.style = 'red';
-      }
+        this.style = this.striped;
     }
   }
 

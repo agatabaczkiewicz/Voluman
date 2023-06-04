@@ -27,6 +27,13 @@ export class AvailabilityComponent implements OnInit {
   }
 
 }
+
+// export interface ScheduleClass{
+//   maxLoad:string,
+//   load:string,
+//   schedule:NeedClass[]
+// }
+
 export interface NeedClass{
   date:string,
   slots:SlotClass[]
@@ -36,4 +43,6 @@ export interface SlotClass{
   startTime:string,
   endTime:string,
   isShift:string;
+  volunteer?:string,
+  shortName?:string
 }

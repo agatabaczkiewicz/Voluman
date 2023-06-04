@@ -7,6 +7,43 @@
   text-align: center;
 }
 
+
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.modal-body{
+  justify-content: center;
+  align-items: center;
+  display: flex!important;
+}
+//.fade.show {
+//  opacity: 1;
+//}
+
+
+
+
+//.modal-backdrop.fade
+//{
+//  opacity: 0.5;
+//}
+//.modal-open .modal
+//{
+//  opacity: 1;
+//}
+//
+
+
+
+
+
+
+
+
+
 .btn-icon-row{
   //transform: scale(6);
   //display: inline-block !important;
@@ -23,9 +60,6 @@
 .btn-icon{
   font-size: 6rem;
 }
-
-
-
 .btn-text{
   font-size: large;
   font-weight: bolder;
