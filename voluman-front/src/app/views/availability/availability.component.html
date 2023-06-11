@@ -1,20 +1,23 @@
-<app-breadcrumb [path]=path></app-breadcrumb>
+<app-breadcrumb [path]=path [back]="'menu'"></app-breadcrumb>
 <div class="row w-100">
   <div class="col-sm-4  justify-content-md-center">
     <div class="row mt-lg-5">
-      <button type="button" class="btn btn-secondary w-25 me-2 ms-lg-5">Secondary</button>
-      <button type="button" class="btn btn-secondary w-25">Secondary</button>
+      <button type="button" class="btn btn-success w-25 me-2 ms-lg-5" (click)="onSaveClick()">Zapisz</button>
+      <button type="button" class="btn btn-outline-dark w-25" (click)="onUnDoClick()">Anuluj zmiany</button>
     </div>
-    <div class="row mt-lg-5 position-absolute bottom-0 start-0 mb-5  ">
-      <div class="card ms-lg-5 " style="width: 18rem;">
+    <div class="row mt-lg-5  bottom-0 start-0 mb-5  ">
+      <div class="card ms-lg-5 " style="max-width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Legenda</h5>
           <div class="card-text">
-            <b>Klik</b><br>
-            <b>Shift + Klik</b>
-            <div class="square"></div>
-            <div class="square stripes "></div>
-            <div class="square text-center pb-2 pt-0"><p>---</p></div>
+            <b>Klik</b> - Zmiana stanu slotu<br>
+            <b>Shift + Klik</b> - Dodanie koljenych slotów.<br>
+            <div class="line">
+              <div class="square"></div><div> - Tu są Twoje akcje</div></div>
+            <div class="line">
+              <div class="square stripes "></div><div> - Tu jesteś dostępny</div></div>
+            <div class="line">
+              <div class="square text-center pb-2 pt-0"><p>---</p></div><div> - Tu nie ma Twoich akcji</div></div>
 
           </div>
         </div>
@@ -22,6 +25,6 @@
     </div>
   </div>
   <div class="col">
-<app-calendar [needs]="days"></app-calendar>
+<app-calendar #calendar [needs]="days" [isSchedule]=false></app-calendar>
   </div>
 </div>

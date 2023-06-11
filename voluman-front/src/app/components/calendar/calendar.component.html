@@ -1,4 +1,4 @@
-<div class="container w-100 justify-content-center align-self-end">
+<div #Calendar class="container w-100 justify-content-center align-self-end">
   <div class="table-responsive-sm">
     <table class="table  table-bordered main-table  ">
       <thead class="table-light">
@@ -12,6 +12,14 @@
           <button class="btn btn-sm btn-light" (click)="onNextWeekClick()"><i class="bi bi-arrow-right-circle"></i></button>
         </th>
       </tr>
+      <tr *ngIf="isSchedule">
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th class="td-custom" *ngFor="let x of [].constructor(7); let i = index" scope="col">
+          <button type="button" class="btn btn-sm btn-outline-dark" (click)="onOpenDayClick(needs[i+week], schedule[i+week])">Otwórz</button>
+        </th>
+        <th scope="col"></th>
+      </tr>
       </thead>
       <tbody>
       <tr>
@@ -24,17 +32,19 @@
           <table class="table table-bordered ">
             <tr class="times-th " *ngFor="let slotTime of times">
               <td class="td-custom">
-                <app-calendar-cell class="td-custom" [value]=slotTime [th]=true></app-calendar-cell>
+                <app-availability-cell class="td-custom" [value]=slotTime [th]=true></app-availability-cell>
               </td>
             </tr>
           </table>
         </td>
         <td *ngFor="let day of  [].constructor(7); index as i">
           <table class="table table-bordered ">
-            <tr *ngFor="let shift of needs[i+week].slots">
+            <tr *ngFor="let shift of needs[i+week].slots; index as j">
               <td class="td-custom">
-                <app-calendar-cell class="td-custom" (wasClickEmit)="wasClickEvent($event)" [wasClick]=wasClick
-                                   [value]=shift.isShift></app-calendar-cell>
+                <app-availability-cell *ngIf="!this.isSchedule" class="td-custom" (wasClickEmit)="wasClickEvent($event)" [wasClick]=wasClick
+                                   [needSlot]=shift></app-availability-cell>
+                <app-cell-schedule *ngIf="this.isSchedule" class="td-custom" (wasClickEmit)="wasClickEvent($event)" [wasClick]=wasClick
+                                       [needSlot]=shift [scheduleSlot]="schedule[i+week].slots[j]"></app-cell-schedule>
               </td>
             </tr>
           </table>
@@ -48,6 +58,6 @@
     </table>
   </div>
 </div>
-
+<app-calendar-day #dayModal></app-calendar-day>
 
 

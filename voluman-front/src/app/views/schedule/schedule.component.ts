@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {NeedClass} from "../availability/availability.component";
+
 import {StorageService} from "../../components/services/storage.service";
+import {NeedClass, ScheduleClass} from "../../models/models";
 
 @Component({
   selector: 'app-schedule',
@@ -10,11 +11,21 @@ import {StorageService} from "../../components/services/storage.service";
 export class ScheduleComponent implements OnInit {
 
   v:NeedClass[]=[]
+  availability:NeedClass[]=[]
   constructor(private storageService: StorageService) {
     let fromStorage = this.storageService.getData("schedule");
     if(fromStorage != null) {
       this.schedule = JSON.parse(fromStorage) as ScheduleClass;
       this.v = this.schedule.schedule;
+    }
+    fromStorage = this.storageService.getData("availability");
+    if(fromStorage != null) {
+      this.availability = JSON.parse(fromStorage) as NeedClass[];
+    }else{
+      fromStorage = this.storageService.getData("needs");
+      if(fromStorage != null) {
+        this.availability = JSON.parse(fromStorage).schedule as NeedClass[];
+      }
     }
   }
   path=["Główne Menu", "Twoja dostępność"];
@@ -26,9 +37,4 @@ export class ScheduleComponent implements OnInit {
   ngOnInit(): void {
   }
 
-}
-export interface ScheduleClass{
-  maxLoad:string,
-  load:string,
-  schedule:NeedClass[]
 }

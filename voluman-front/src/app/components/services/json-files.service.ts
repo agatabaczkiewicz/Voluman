@@ -36,6 +36,11 @@ export class JsonFilesService {
       // console.log(res);
       this.storageService.saveData("needs",JSON.stringify(res) );
     });
+    // url= '/assets/json/availability.json';
+    // this.http.get(url).subscribe( (res) => {
+    //   // console.log(res);
+    //   this.storageService.saveData("availability",JSON.stringify(res) );
+    // });
   }
 
 

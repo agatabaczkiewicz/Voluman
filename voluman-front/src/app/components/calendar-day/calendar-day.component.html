@@ -1,0 +1,76 @@
+<ng-template #calendarDayModal let-modal class="modal-content" let-c="close" let-d="dismiss">
+  <div class="modal-content modal-content2">
+    <div class="modal-header">
+      <h5 class="modal-title">Edytuj dyżury w dniu {{date}}</h5>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+
+      <div class="row w-100">
+        <div class="col-sm-4  justify-content-md-center">
+          <div class="row mt-lg-5">
+            <button type="button" class="btn btn-success w-25 me-2 ms-lg-5">Akceptuj plan tygodnia </button>
+          </div>
+          <div class="row mt-lg-5 position-absolute start-0 mb-5  ">
+            <div class="card ms-lg-5 " style="width: 10rem;">
+              <div class="card-body">
+                <h5 class="card-title">Obciążenie tygodniowe[godz]</h5>
+                <div class="card-text">
+                  <b>MAX:</b><br>
+                  <b>Plan:</b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-lg-5 position-absolute bottom-0 start-0 mb-5  ">
+            <div class="card ms-lg-5 " style="width: 10rem;">
+              <div class="card-body">
+                <h5 class="card-title">Legenda</h5>
+                <div class="card-text">
+                  <b>Klik</b><br>
+                  <b>Shift + Klik</b>
+                  <div class="square"></div>
+                  <div class="square stripes "></div>
+                  <div class="square text-center pb-2 pt-0"><p>---</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+      <div class="container w-75 justify-content-center align-self-end">
+        <div class="table-responsive-sm">
+          <table class="table  table-bordered main-table  ">
+            <tbody>
+            <tr>
+              <td>
+                <table class="table table-bordered ">
+                  <tr class="times-th " *ngFor="let slotTime of times">
+                    <td class="td-custom">
+                      <app-availability-cell class="td-custom" [value]=slotTime [th]=true></app-availability-cell>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td *ngFor="let day of  [].constructor(actionCount); index as i">
+                <table class="table table-bordered ">
+                  <tr *ngFor="let shift of need; index as j">
+                    <td class="td-custom">
+                      <app-cell-schedule class="td-custom" [needSlot]=shift [scheduleSlot]="schedule[j]"></app-cell-schedule>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    </div>
+</ng-template>

@@ -1,6 +1,8 @@
 <nav aria-label="breadcrumb" class="mt-2 mx-lg-4">
-  <ol class="breadcrumb" >
+  <ol class="breadcrumb">
     <li class="breadcrumb-item" *ngFor="let el of path"><span class="br-size">{{el}}</span></li>
   </ol>
 </nav>
-<button btn btn-outline-dark><i class="bi bi-calendar-week btn-icon"></i>Wróć do Menu</button>
+<button type="button" class="btn btn-outline-dark ms-lg-3" (click)="onClick()"><i class="bi bi-calendar-week btn-icon"></i>Wróć
+  do Menu
+</button>

@@ -1,9 +1,10 @@
-import {Component, DEFAULT_CURRENCY_CODE, Inject, Input, LOCALE_ID, OnInit} from '@angular/core';
-import {NeedClass} from "../../views/availability/availability.component";
+import {Component, DEFAULT_CURRENCY_CODE, Inject, Input, LOCALE_ID, OnInit, ViewChild} from '@angular/core';
+
 import {formatDate} from "@angular/common";
 import * as cloneDeep from 'lodash';
 import {forEach} from "lodash";
 import {StorageService} from "../services/storage.service";
+import {NeedClass, SlotClass} from "../../models/models";
 
 
 @Component({
@@ -21,8 +22,11 @@ export class CalendarComponent implements OnInit {
   days = ["PN","WT","ŚR","CZ","PT","SB","ND"];
   wasClick:boolean=false;
   @Input('needs')needs:NeedClass[]=[];
+  @Input('schedule')schedule:NeedClass[]=[];
+  @Input('isSchedule') isSchedule:boolean=false;
   times:string[]=[]
   week=0;
+  @ViewChild('dayModal') dayModal: any;
   constructor(@Inject(LOCALE_ID) public locale: string,
               private storageService : StorageService) {
 
@@ -33,8 +37,9 @@ export class CalendarComponent implements OnInit {
 
   }
 
-  wasClickEvent(e:boolean){
+  wasClickEvent(e:SlotClass){
     this.wasClick= ! this.wasClick;
+
   }
 
   onNextWeekClick(){
@@ -47,5 +52,9 @@ export class CalendarComponent implements OnInit {
     if(this.needs[this.week-7] != undefined) {
       this.week = this.week - 7;
     }
+  }
+
+  onOpenDayClick(day:NeedClass, schedule: NeedClass){
+  this.dayModal.openModal(day.date, day.slots, schedule.slots, this.times );
   }
 }

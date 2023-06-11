@@ -4,338 +4,422 @@
     "schedule": [
         {
             "date": "22-05-2023",
-            "slots": [
+          "slots": [
+            {
+              "startTime": "08:00:00",
+              "endTime": "9:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "9:00:00",
+              "endTime": "10:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "10:00:00",
+              "endTime": "11:00:00",
+              "isShift": true,
+              "actions": [
                 {
-                    "startTime": "08:00:00",
-                    "endTime": "9:00:00",
-                    "isShift": "false",
-                    "volunteer": "null",
-                    "shortName": "Pacz"
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": true
                 },
                 {
-                    "startTime": "9:00:00",
-                    "endTime": "10:00:00",
-                    "isShift": "false",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "10:00:00",
-                    "endTime": "11:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "11:00:00",
-                    "endTime": "12:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "12:00:00",
-                    "endTime": "13:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "13:00:00",
-                    "endTime": "14:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "14:00:00",
-                    "endTime": "15:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "15:00:00",
-                    "endTime": "16:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN"
-                },
-                {
-                    "startTime": "16:00:00",
-                    "endTime": "17:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 4,
+                  "your": false
                 }
-            ]
+              ]
+            },
+            {
+              "startTime": "11:00:00",
+              "endTime": "12:00:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 4,
+                  "your": false
+                }
+              ]
+            },
+            {
+              "startTime": "12:00:00",
+              "endTime": "13:00:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": true
+                },
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 4,
+                  "your": false
+                }
+              ]
+            },
+            {
+              "startTime": "13:00:00",
+              "endTime": "14:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "14:00:00",
+              "endTime": "15:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "15:00:00",
+              "endTime": "16:00:00",
+              "actions": []
+            },
+            {
+              "startTime": "16:00:00",
+              "endTime": "17:00:00",
+              "isShift": false,
+              "actions": []
+            }
+          ]
         },
         {
             "date": "23-05-2023",
-            "slots": [
+          "slots": [
+            {
+              "startTime": "08:00:00",
+              "endTime": "9:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "9:00:00",
+              "endTime": "10:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "10:00:00",
+              "endTime": "11:00:00",
+              "isShift": true,
+              "actions": [
                 {
-                    "startTime": "08:00:00",
-                    "endTime": "9:00:00",
-                    "isShift": "false",
-                    "volunteer": "null",
-                    "shortName": "Pacz"
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": true
                 },
                 {
-                    "startTime": "9:00:00",
-                    "endTime": "10:00:00",
-                    "isShift": "false",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "10:00:00",
-                    "endTime": "11:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "11:00:00",
-                    "endTime": "12:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "12:00:00",
-                    "endTime": "13:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "13:00:00",
-                    "endTime": "14:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "14:00:00",
-                    "endTime": "15:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "15:00:00",
-                    "endTime": "16:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN"
-                },
-                {
-                    "startTime": "16:00:00",
-                    "endTime": "17:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 4,
+                  "your": false
                 }
-            ]
+              ]
+            },
+            {
+              "startTime": "11:00:00",
+              "endTime": "12:00:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 4,
+                  "your": false
+                }
+              ]
+            },
+            {
+              "startTime": "12:00:00",
+              "endTime": "13:00:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": true
+                },
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 4,
+                  "your": false
+                }
+              ]
+            },
+            {
+              "startTime": "13:00:00",
+              "endTime": "14:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "14:00:00",
+              "endTime": "15:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "15:00:00",
+              "endTime": "16:00:00",
+              "actions": []
+            },
+            {
+              "startTime": "16:00:00",
+              "endTime": "17:00:00",
+              "isShift": false,
+              "actions": []
+            }
+          ]
         },
         {
             "date": "24-05-2023",
-            "slots": [
+          "slots": [
+            {
+              "startTime": "08:00:00",
+              "endTime": "9:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "9:00:00",
+              "endTime": "10:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "10:00:00",
+              "endTime": "11:00:00",
+              "isShift": true,
+              "actions": [
                 {
-                    "startTime": "08:00:00",
-                    "endTime": "9:00:00",
-                    "isShift": "false",
-                    "volunteer": "null",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "9:00:00",
-                    "endTime": "10:00:00",
-                    "isShift": "false",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "10:00:00",
-                    "endTime": "11:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "11:00:00",
-                    "endTime": "12:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "12:00:00",
-                    "endTime": "13:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "13:00:00",
-                    "endTime": "14:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "14:00:00",
-                    "endTime": "15:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "15:00:00",
-                    "endTime": "16:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN"
-                },
-                {
-                    "startTime": "16:00:00",
-                    "endTime": "17:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": true
                 }
-            ]
+              ]
+            },
+            {
+              "startTime": "11:00:00",
+              "endTime": "12:00:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 4,
+                  "your": false
+                }
+              ]
+            },
+            {
+              "startTime": "12:00:00",
+              "endTime": "13:00:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": true
+                }
+              ]
+            },
+            {
+              "startTime": "13:00:00",
+              "endTime": "14:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "14:00:00",
+              "endTime": "15:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "15:00:00",
+              "endTime": "16:00:00",
+              "actions": []
+            },
+            {
+              "startTime": "16:00:00",
+              "endTime": "17:00:00",
+              "isShift": false,
+              "actions": []
+            }
+          ]
         },
         {
             "date": "25-05-2023",
-            "slots": [
+          "slots": [
+            {
+              "startTime": "08:00:00",
+              "endTime": "9:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "9:00:00",
+              "endTime": "10:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "10:00:00",
+              "endTime": "11:00:00",
+              "isShift": true,
+              "actions": [
                 {
-                    "startTime": "08:00:00",
-                    "endTime": "9:00:00",
-                    "isShift": "false",
-                    "volunteer": "null",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "9:00:00",
-                    "endTime": "10:00:00",
-                    "isShift": "false",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "10:00:00",
-                    "endTime": "11:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "11:00:00",
-                    "endTime": "12:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "12:00:00",
-                    "endTime": "13:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "13:00:00",
-                    "endTime": "14:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "14:00:00",
-                    "endTime": "15:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "15:00:00",
-                    "endTime": "16:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN"
-                },
-                {
-                    "startTime": "16:00:00",
-                    "endTime": "17:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": true
                 }
-            ]
+              ]
+            },
+            {
+              "startTime": "11:00:00",
+              "endTime": "12:00:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 4,
+                  "your": false
+                }
+              ]
+            },
+            {
+              "startTime": "12:00:00",
+              "endTime": "13:00:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": true
+                }
+              ]
+            },
+            {
+              "startTime": "13:00:00",
+              "endTime": "14:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "14:00:00",
+              "endTime": "15:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "15:00:00",
+              "endTime": "16:00:00",
+              "actions": []
+            },
+            {
+              "startTime": "16:00:00",
+              "endTime": "17:00:00",
+              "isShift": false,
+              "actions": []
+            }
+          ]
         },
         {
             "date": "26-05-2023",
-            "slots": [
+          "slots": [
+            {
+              "startTime": "08:00:00",
+              "endTime": "9:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "9:00:00",
+              "endTime": "10:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "10:00:00",
+              "endTime": "11:00:00",
+              "isShift": true,
+              "actions": [
                 {
-                    "startTime": "08:00:00",
-                    "endTime": "9:00:00",
-                    "isShift": "false",
-                    "volunteer": "null",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "9:00:00",
-                    "endTime": "10:00:00",
-                    "isShift": "false",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "10:00:00",
-                    "endTime": "11:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "11:00:00",
-                    "endTime": "12:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "12:00:00",
-                    "endTime": "13:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "13:00:00",
-                    "endTime": "14:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "14:00:00",
-                    "endTime": "15:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
-                },
-                {
-                    "startTime": "15:00:00",
-                    "endTime": "16:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN"
-                },
-                {
-                    "startTime": "16:00:00",
-                    "endTime": "17:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": true
                 }
-            ]
+              ]
+            },
+            {
+              "startTime": "11:00:00",
+              "endTime": "12:00:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 4,
+                  "your": false
+                }
+              ]
+            },
+            {
+              "startTime": "12:00:00",
+              "endTime": "13:00:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": true
+                }
+              ]
+            },
+            {
+              "startTime": "13:00:00",
+              "endTime": "14:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "14:00:00",
+              "endTime": "15:00:00",
+              "isShift": false,
+              "actions": []
+            },
+            {
+              "startTime": "15:00:00",
+              "endTime": "16:00:00",
+              "actions": []
+            },
+            {
+              "startTime": "16:00:00",
+              "endTime": "17:00:00",
+              "isShift": false,
+              "actions": []
+            }
+          ]
         },
         {
             "date": "27-05-2023",
@@ -343,64 +427,76 @@
                 {
                     "startTime": "08:00:00",
                     "endTime": "9:00:00",
-                    "isShift": "false",
-                    "volunteer": "null",
-                    "shortName": "Pacz"
+                    "isShift": false,
+                    "actions": []
                 },
                 {
                     "startTime": "9:00:00",
                     "endTime": "10:00:00",
-                    "isShift": "false",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
+                    "isShift": false,
+                    "actions": []
                 },
                 {
                     "startTime": "10:00:00",
                     "endTime": "11:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
+                    "isShift": true,
+                  "actions": [
+                    {
+                      "action": "Pacz",
+                      "need": 5,
+                      "scheduled": 5,
+                      "your": true
+                    }
+                  ]
                 },
                 {
                     "startTime": "11:00:00",
                     "endTime": "12:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
+                    "isShift": true,
+                  "actions": [
+                    {
+                      "action": "Pacz",
+                      "need": 5,
+                      "scheduled": 4,
+                      "your": false
+                    }
+                  ]
                 },
                 {
                     "startTime": "12:00:00",
                     "endTime": "13:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
+                    "isShift": true,
+                  "actions": [
+                    {
+                      "action": "Pacz",
+                      "need": 5,
+                      "scheduled": 5,
+                      "your": true
+                    }
+                  ]
                 },
                 {
                     "startTime": "13:00:00",
                     "endTime": "14:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
+                    "isShift": false,
+                    "actions": []
                 },
                 {
                     "startTime": "14:00:00",
                     "endTime": "15:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
+                    "isShift": false,
+                    "actions": []
                 },
                 {
                     "startTime": "15:00:00",
                     "endTime": "16:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN"
+                    "actions": []
                 },
                 {
                     "startTime": "16:00:00",
                     "endTime": "17:00:00",
-                    "isShift": "true",
-                    "volunteer": "JN",
-                    "shortName": "Pacz"
+                    "isShift": false,
+                    "actions": []
                 }
             ]
         },
@@ -410,64 +506,76 @@
           {
             "startTime": "08:00:00",
             "endTime": "9:00:00",
-            "isShift": "false",
-            "volunteer": "null",
-            "shortName": "Pacz"
+            "isShift": false,
+            "actions": []
           },
           {
             "startTime": "9:00:00",
             "endTime": "10:00:00",
-            "isShift": "false",
-            "volunteer": "JN",
-            "shortName": "Pacz"
+            "isShift": false,
+            "actions": []
           },
           {
             "startTime": "10:00:00",
             "endTime": "11:00:00",
-            "isShift": "true",
-            "volunteer": "JN",
-            "shortName": "Pacz"
+            "isShift": true,
+            "actions": [
+              {
+                "action": "Pacz",
+                "need": 5,
+                "scheduled": 5,
+                "your": true
+              }
+            ]
           },
           {
             "startTime": "11:00:00",
             "endTime": "12:00:00",
-            "isShift": "true",
-            "volunteer": "JN",
-            "shortName": "Pacz"
+            "isShift": true,
+            "actions": [
+              {
+                "action": "Pacz",
+                "need": 5,
+                "scheduled": 4,
+                "your": false
+              }
+            ]
           },
           {
             "startTime": "12:00:00",
             "endTime": "13:00:00",
-            "isShift": "true",
-            "volunteer": "JN",
-            "shortName": "Pacz"
+            "isShift": true,
+            "actions": [
+              {
+                "action": "Pacz",
+                "need": 5,
+                "scheduled": 5,
+                "your": true
+              }
+            ]
           },
           {
             "startTime": "13:00:00",
             "endTime": "14:00:00",
-            "isShift": "true",
-            "volunteer": "JN",
-            "shortName": "Pacz"
+            "isShift": false,
+            "actions": []
           },
           {
             "startTime": "14:00:00",
             "endTime": "15:00:00",
-            "isShift": "true",
-            "volunteer": "JN",
-            "shortName": "Pacz"
+            "isShift": false,
+            "actions": []
           },
           {
             "startTime": "15:00:00",
             "endTime": "16:00:00",
-            "isShift": "true",
-            "volunteer": "JN"
+            "actions": []
           },
           {
             "startTime": "16:00:00",
             "endTime": "17:00:00",
-            "isShift": "true",
-            "volunteer": "JN",
-            "shortName": "Pacz"
+            "isShift": false,
+            "actions": []
           }
         ]
       }

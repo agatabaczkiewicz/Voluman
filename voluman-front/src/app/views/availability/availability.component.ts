@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {Router} from "@angular/router";
 import {StorageService} from "../../components/services/storage.service";
+import {NeedClass} from "../../models/models";
+import {CalendarComponent} from "../../components/calendar/calendar.component";
 
 @Component({
   selector: 'app-availability',
@@ -9,40 +11,41 @@ import {StorageService} from "../../components/services/storage.service";
 })
 export class AvailabilityComponent implements OnInit {
 
+  @ViewChild(CalendarComponent) calendar: CalendarComponent | undefined;
+
   constructor(public router: Router,
               private storageService: StorageService,) {
-    let fromStorage = this.storageService.getData("needs");
-    if(fromStorage != null) {
-      this.days = JSON.parse(fromStorage).schedule as NeedClass[];
-    }
+    this.getDataStorage();
   }
-  path=["Główne Menu", "Twoja dostępność"];
-  days:NeedClass[]=[];
+
+  path = ["Główne Menu", "Twoja dostępność"];
+  days: NeedClass[] = [];
+
   ngOnInit(): void {
 
-    // let fromStorage = this.storageService.getData("needs");
-    // if(fromStorage != null) {
-    //   this.days = JSON.parse(fromStorage).schedule as NeedClass[];
-    // }
   }
 
-}
+  onSaveClick() {
+    this.storageService.saveData('availability', JSON.stringify(this.calendar?.needs));
+  }
 
-// export interface ScheduleClass{
-//   maxLoad:string,
-//   load:string,
-//   schedule:NeedClass[]
-// }
+  onUnDoClick() {
+    this.getDataStorage();
+    if (this.calendar) {
+      this.calendar.needs = this.days;
+    }
+  }
 
-export interface NeedClass{
-  date:string,
-  slots:SlotClass[]
-}
+  getDataStorage() {
+    let fromStorage = this.storageService.getData("availability");
+    if(fromStorage != null) {
+      this.days = JSON.parse(fromStorage) as NeedClass[];
+    }else{
+      fromStorage = this.storageService.getData("needs");
+      if(fromStorage != null) {
+        this.days= JSON.parse(fromStorage).schedule as NeedClass[];
+      }
+    }
 
-export interface SlotClass{
-  startTime:string,
-  endTime:string,
-  isShift:string;
-  volunteer?:string,
-  shortName?:string
+  }
 }

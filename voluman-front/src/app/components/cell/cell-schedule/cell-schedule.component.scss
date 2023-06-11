@@ -1,0 +1,16 @@
+.cell{
+  width: inherit;
+  height: inherit;
+  min-height:100%;
+  display: block;
+  backdrop-filter: drop-shadow(4px 4px 10px blue);
+  //border-width: thin;
+  //border-style: solid;
+}
+//.blur{
+//
+//  background: rgba(255, 255, 255, 0.2); // Make sure this color has an opacity of less than 1
+//  backdrop-filter: blur(8px); // This be the blur
+//
+//
+//}

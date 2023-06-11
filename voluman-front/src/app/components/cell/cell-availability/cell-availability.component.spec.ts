@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CalendarCellComponent } from './calendar-cell.component';
+import { CellAvailabilityComponent } from './cell-availability.component';
 
 describe('CalendarCellComponent', () => {
-  let component: CalendarCellComponent;
-  let fixture: ComponentFixture<CalendarCellComponent>;
+  let component: CellAvailabilityComponent;
+  let fixture: ComponentFixture<CellAvailabilityComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CalendarCellComponent]
+      declarations: [CellAvailabilityComponent]
     });
-    fixture = TestBed.createComponent(CalendarCellComponent);
+    fixture = TestBed.createComponent(CellAvailabilityComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

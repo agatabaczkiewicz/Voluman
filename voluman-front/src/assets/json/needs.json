@@ -6,47 +6,47 @@
                 {
                     "startTime": "08:00:00",
                     "endTime": "9:00:00",
-                    "isShift": "false"
+                    "isShift": false
                 },
                 {
                     "startTime": "9:00:00",
                     "endTime": "10:00:00",
-                    "isShift": "false"
+                    "isShift": false
                 },
                 {
                     "startTime": "10:00:00",
                     "endTime": "11:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "11:00:00",
                     "endTime": "12:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "12:00:00",
                     "endTime": "13:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "13:00:00",
                     "endTime": "14:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "14:00:00",
                     "endTime": "15:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "15:00:00",
                     "endTime": "16:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "16:00:00",
                     "endTime": "17:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 }
             ]
         },
@@ -56,47 +56,47 @@
                 {
                     "startTime": "08:00:00",
                     "endTime": "9:00:00",
-                    "isShift": "false"
+                    "isShift": false
                 },
                 {
                     "startTime": "9:00:00",
                     "endTime": "10:00:00",
-                    "isShift": "false"
+                    "isShift": false
                 },
                 {
                     "startTime": "10:00:00",
                     "endTime": "11:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "11:00:00",
                     "endTime": "12:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "12:00:00",
                     "endTime": "13:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "13:00:00",
                     "endTime": "14:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "14:00:00",
                     "endTime": "15:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "15:00:00",
                     "endTime": "16:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "16:00:00",
                     "endTime": "17:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 }
             ]
         },
@@ -106,47 +106,47 @@
                 {
                     "startTime": "08:00:00",
                     "endTime": "9:00:00",
-                    "isShift": "false"
+                    "isShift": false
                 },
                 {
                     "startTime": "9:00:00",
                     "endTime": "10:00:00",
-                    "isShift": "false"
+                    "isShift": false
                 },
                 {
                     "startTime": "10:00:00",
                     "endTime": "11:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "11:00:00",
                     "endTime": "12:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "12:00:00",
                     "endTime": "13:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "13:00:00",
                     "endTime": "14:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "14:00:00",
                     "endTime": "15:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "15:00:00",
                     "endTime": "16:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "16:00:00",
                     "endTime": "17:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 }
             ]
         },
@@ -156,47 +156,47 @@
                 {
                     "startTime": "08:00:00",
                     "endTime": "9:00:00",
-                    "isShift": "false"
+                    "isShift": false
                 },
                 {
                     "startTime": "9:00:00",
                     "endTime": "10:00:00",
-                    "isShift": "false"
+                    "isShift": false
                 },
                 {
                     "startTime": "10:00:00",
                     "endTime": "11:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "11:00:00",
                     "endTime": "12:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "12:00:00",
                     "endTime": "13:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "13:00:00",
                     "endTime": "14:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "14:00:00",
                     "endTime": "15:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "15:00:00",
                     "endTime": "16:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "16:00:00",
                     "endTime": "17:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 }
             ]
         },
@@ -206,47 +206,47 @@
                 {
                     "startTime": "08:00:00",
                     "endTime": "9:00:00",
-                    "isShift": "false"
+                    "isShift": false
                 },
                 {
                     "startTime": "9:00:00",
                     "endTime": "10:00:00",
-                    "isShift": "false"
+                    "isShift": false
                 },
                 {
                     "startTime": "10:00:00",
                     "endTime": "11:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "11:00:00",
                     "endTime": "12:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "12:00:00",
                     "endTime": "13:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "13:00:00",
                     "endTime": "14:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "14:00:00",
                     "endTime": "15:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "15:00:00",
                     "endTime": "16:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 },
                 {
                     "startTime": "16:00:00",
                     "endTime": "17:00:00",
-                    "isShift": "true"
+                    "isShift": true
                 }
             ]
         },
@@ -256,47 +256,47 @@
           {
             "startTime": "08:00:00",
             "endTime": "9:00:00",
-            "isShift": "false"
+            "isShift": false
           },
           {
             "startTime": "9:00:00",
             "endTime": "10:00:00",
-            "isShift": "false"
+            "isShift": false
           },
           {
             "startTime": "10:00:00",
             "endTime": "11:00:00",
-            "isShift": "true"
+            "isShift": true
           },
           {
             "startTime": "11:00:00",
             "endTime": "12:00:00",
-            "isShift": "true"
+            "isShift": true
           },
           {
             "startTime": "12:00:00",
             "endTime": "13:00:00",
-            "isShift": "true"
+            "isShift": true
           },
           {
             "startTime": "13:00:00",
             "endTime": "14:00:00",
-            "isShift": "true"
+            "isShift": true
           },
           {
             "startTime": "14:00:00",
             "endTime": "15:00:00",
-            "isShift": "false"
+            "isShift": false
           },
           {
             "startTime": "15:00:00",
             "endTime": "16:00:00",
-            "isShift": "false"
+            "isShift": false
           },
           {
             "startTime": "16:00:00",
             "endTime": "17:00:00",
-            "isShift": "false"
+            "isShift": false
           }
         ]
       },
@@ -306,47 +306,47 @@
               {
                 "startTime": "08:00:00",
                 "endTime": "9:00:00",
-                "isShift": "false"
+                "isShift": false
               },
               {
                 "startTime": "9:00:00",
                 "endTime": "10:00:00",
-                "isShift": "false"
+                "isShift": false
               },
               {
                 "startTime": "10:00:00",
                 "endTime": "11:00:00",
-                "isShift": "true"
+                "isShift": true
               },
               {
                 "startTime": "11:00:00",
                 "endTime": "12:00:00",
-                "isShift": "true"
+                "isShift": true
               },
               {
                 "startTime": "12:00:00",
                 "endTime": "13:00:00",
-                "isShift": "true"
+                "isShift": true
               },
               {
                 "startTime": "13:00:00",
                 "endTime": "14:00:00",
-                "isShift": "true"
+                "isShift": true
               },
               {
                 "startTime": "14:00:00",
                 "endTime": "15:00:00",
-                "isShift": "false"
+                "isShift": false
               },
               {
                 "startTime": "15:00:00",
                 "endTime": "16:00:00",
-                "isShift": "false"
+                "isShift": false
               },
               {
                 "startTime": "16:00:00",
                 "endTime": "17:00:00",
-                "isShift": "false"
+                "isShift": false
               }
             ]
           }

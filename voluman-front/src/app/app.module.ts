@@ -13,7 +13,7 @@ import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import { FontAwesomeModule, FaIconLibrary  } from '@fortawesome/angular-fontawesome';
-import { CalendarCellComponent } from './components/calendar-cell/calendar-cell.component';
+import { CellAvailabilityComponent } from './components/cell/cell-availability/cell-availability.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
@@ -21,6 +21,10 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ModalButtonMenuComponent } from './components/modal-button-menu/modal-button-menu.component';
 import { MaxWeekHoursComponent } from './views/max-week-hours/max-week-hours.component';
 import '@angular/common/locales/global/pl';
+import { CellScheduleComponent } from './components/cell/cell-schedule/cell-schedule.component';
+import { CalendarDayComponent } from './components/calendar-day/calendar-day.component';
+import { ActionsComponent } from './views/actions/actions.component';
+import { ActionModalComponent } from './components/action-modal/action-modal.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -32,12 +36,16 @@ export function HttpLoaderFactory(http: HttpClient) {
     ScheduleComponent,
     AvailabilityComponent,
     LoginComponent,
-    CalendarCellComponent,
+    CellAvailabilityComponent,
     HeaderComponent,
     FooterComponent,
     BreadcrumbComponent,
     ModalButtonMenuComponent,
     MaxWeekHoursComponent,
+    CellScheduleComponent,
+    CalendarDayComponent,
+    ActionsComponent,
+    ActionModalComponent,
 
   ],
   imports: [

@@ -1,0 +1,24 @@
+.row{
+  //width: 100%;
+}
+.actions{
+  bottom:0px;
+
+  //justify-content: space-between;
+
+}
+
+.td-custom{
+  height: 0.4rem !important;
+}
+th{
+  font-size: smaller;
+}
+.main-table td:last-of-type {
+  border-right: none;
+
+}
+.main-table td:first-of-type{
+  border-left: none;
+
+}

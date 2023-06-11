@@ -1,0 +1,37 @@
+<app-breadcrumb [path]=path [back]="'menu'"></app-breadcrumb>
+<div class="row justify-content-md-center">
+<div class="card ms-lg-5  card-your " style="max-width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title ">Twoje akcje</h5>
+    <hr>
+    <div class="card-text">
+      <ul class="list-group">
+        <li *ngFor="let a of yours" class="list-group-item  card-your-list " (click)="actionModal.openModal(a, '#bfddf4')" >{{a.name}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="card ms-lg-5 card-see" style="max-width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title card-see-title">Akcje do przejrzenia</h5>
+    <hr>
+    <div class="card-text">
+      <ul class="list-group">
+        <li *ngFor="let b of toSee" class="list-group-item card-see-list "  (click)="actionModal.openModal(b, '#acdba3')">{{b.name}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="card ms-lg-5 card-reject" style="max-width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Akcje odrzucone</h5>
+    <hr>
+    <div class="card-text">
+      <ul class="list-group">
+        <li *ngFor="let c of rejected" class="list-group-item card-reject-list"  (click)="actionModal.openModal(c, '#b1b1b1')" >{{c.name}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<app-action-modal #actionModal (reactionEmit)="click($event)"></app-action-modal>

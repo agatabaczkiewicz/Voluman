@@ -26,4 +26,8 @@ export class MenuComponent implements OnInit {
     this.router.navigate(['schedule']);
   }
 
+  onActionsClick(){
+    this.router.navigate(['action']);
+  }
+
 }
