@@ -1,0 +1,32 @@
+{
+    "actions": [
+        {
+            "shortName": "Bar",
+            "name": "MTP.Barek",
+            "parentAction": "MTP",
+            "startDate": "15-05-2022",
+            "endDate": "30-06-2023",
+            "place": "Hala nr 2 na Międzynarodowych Targach Poznańskich Ul. Głogowska 7",
+            "description": "Barek jest czynny przez cały czas. Za darmo podajemy herbatę lub kawę, kanapki, słodycze i inne przekąski. Od 12:00 do 14:00 są wydawane obiady przywożone z zewnątrz (zupa, pieczywo, drugie danie i kompot). Praca polega na wydawaniu posiłków i utrzymaniu w czystości części restauracyjnej oraz pomieszczeń barku. Znajomość języka ukraińskiego lub rosyjskiego będzie bardzo pomocna ale nie jest wymagana."
+        },
+        {
+            "shortName": "Pacz",
+            "name": "Paczki dla UA",
+            "parentAction": null,
+            "startDate": "15-05-2022",
+            "endDate": "30-06-2023",
+            "place": "Hala nr 2 na Międzynarodowych Targach Poznańskich Ul. Głogowska 7",
+            "description": "Zadaniem wolontariuszy będzie pomoc przy przyjmowaniu i wydawaniu paczek dla uchodźców z Ukrainy oraz porządkowanie magazynu (sprzątanie, przenoszenie paczek, oklejanie kartów itp.).Generalnie pracujemy od poniedziałku do soboty w godzinach od 9:00 do 20:00."
+            "reaction": ":)"
+        },
+        {
+            "shortName": "Inf",
+            "name": "MTP.Informacja",
+            "parentAction": "MTP",
+            "startDate": "15-05-2022",
+            "endDate": "30-06-2023",
+            "place": "Hala nr 2 na Międzynarodowych Targach Poznańskich Ul. Głogowska 7",
+            "description": "Punkt informacyjny udziela informacji dot. głównie hali MTP (kiedy są wydawane posiłki, jakie są zasady pobierania odzieży i innych darów, w jakich godzinach i na jakich zasadach można przenocować w hali MTP itp.). Bardzo przydatna będzie znajomość języka ukraińskiego lub rosyjskiego."
+        }
+    ]
+}
