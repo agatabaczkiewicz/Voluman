@@ -1,7 +1,7 @@
 import {Component, OnDestroy} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
-import {JsonFilesService} from "./components/services/json-files.service";
-import {StorageService} from "./components/services/storage.service";
+import {JsonFilesService} from "./services/json-files.service";
+import {StorageService} from "./services/storage.service";
 
 @Component({
   selector: 'app-root',

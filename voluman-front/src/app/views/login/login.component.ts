@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {StorageService} from "../../components/services/storage.service";
+import {StorageService} from "../../services/storage.service";
 import {from} from "rxjs";
 import {FormControl, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
+import {ToastService} from "../../services/toast.service";
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,8 @@ import {Router} from "@angular/router";
 export class LoginComponent implements OnInit {
 
   constructor(private storageService: StorageService,
-              public router: Router) { }
+              public router: Router,
+              private toastService: ToastService) { }
   users=[];
   login = new FormControl('', Validators.required);
   password = new FormControl('', Validators.required);
@@ -33,10 +35,17 @@ export class LoginComponent implements OnInit {
     let res = this.users.find(x=>x.email==inputLogin);
     // @ts-ignore
     if (res != null && res.password == passInput){
+        this.storageService.saveData("user","true");
         this.router.navigate(['menu']);
     }
+    else{
+      this.toastService.show('Złe dane logowania',{ classname: 'bg-danger text-light'});
+
+    }
+
   }
   onGuest(){
-
+    this.storageService.saveData("guest","true");
+    this.router.navigate(['guest-menu']);
   }
 }

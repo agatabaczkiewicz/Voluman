@@ -1,4 +1,4 @@
-import {Component, ElementRef, EventEmitter, Output, ViewChild} from '@angular/core';
+import {Component, ElementRef, EventEmitter, Input, Output, ViewChild} from '@angular/core';
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {ActionDescClass, SlotClass} from "../../models/models";
 
@@ -10,6 +10,7 @@ import {ActionDescClass, SlotClass} from "../../models/models";
 export class ActionModalComponent {
 
   @ViewChild('actionModal') actionModal: ElementRef | undefined;
+  @Input('guest') guest = "false";
   action: ActionDescClass={};
   @Output() reactionEmit = new EventEmitter<ActionDescClass>();
   style = 'blue';

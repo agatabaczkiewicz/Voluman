@@ -8,9 +8,10 @@
     </div>
   </button>
 </nav>
-<div class="container w-50">
-  <div class="row align-items-center">
-    <div class="col">
+<div class="container  w-25">
+
+<div class="row align-items-center">
+    <div class="col align-items-end">
       <button type="button" class="btn btn-outline-dark menu-btn" (click)="onActionsClick()">
         <div class="btn-icon-row row">
           <i class="bi bi-list-check btn-icon"></i></div>
@@ -18,34 +19,13 @@
           Lista Twoich akcji
         </div>
       </button>
-
     </div>
     <div class="col">
-      <button type="button" class="btn btn-outline-dark menu-btn" (click)="menuModal.openModal()">
-        <div class="btn-icon-row row">
-          <i class="bi bi-calendar-date btn-icon"></i></div>
-        <div class="btn-text">
-          <span>Twoja Dostepność</span>
-        </div>
-      </button>
-
-    </div>
-    <div class="col">
-      <button type="button" class="btn btn-outline-dark menu-btn" (click)="onScheduleClick()">
-        <div class=" row btn-icon-row">
-          <i class="bi bi-calendar-check btn-icon"></i></div>
-        <div class="btn-text ">
-          <span>Plan tygodnia</span>
-        </div>
-      </button>
-
-    </div>
-    <div class="col">
-      <button type="button" class="btn btn-outline-dark menu-btn">
+      <button type="button" class="btn btn-outline-dark menu-btn" (click)="onBeVolonteer()">
         <div class="btn-icon-row row ">
           <i class="bi bi-person-fill btn-icon"></i></div>
         <div class="btn-text  ">
-          <span>Twoje dane</span>
+          <span>Zostań wolontariuszem</span>
         </div>
       </button>
 
@@ -54,3 +34,4 @@
   </div>
 </div>
 <app-modal-button-menu #menuModal></app-modal-button-menu>
+

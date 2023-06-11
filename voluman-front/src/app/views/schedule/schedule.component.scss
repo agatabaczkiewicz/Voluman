@@ -1,0 +1,50 @@
+.menu-btn{
+  width:6rem;
+  height: 8rem;
+  //display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn-icon{
+  font-size: 3rem;
+}
+.i-accept{
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: green;
+}
+.btn-accept{
+  max-width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.line{
+  display: flex;
+  justify-content: left;
+  //padding: 3px;
+}
+.stripes {
+  background: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 5px,
+      #6495ED 5px,
+      #6495ED 10px
+  );
+}
+
+.square {
+  height: 20px;
+  width: 35px;
+  background-color: transparent;
+  margin-bottom: 5px;
+  border:1px solid #000;
+  margin-right: 5px;
+}

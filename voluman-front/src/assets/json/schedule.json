@@ -1,6 +1,6 @@
 {
-    "maxLoad": "5",
-    "load": "4",
+    "maxLoad": 5,
+    "load": 4,
     "schedule": [
         {
             "date": "22-05-2023",

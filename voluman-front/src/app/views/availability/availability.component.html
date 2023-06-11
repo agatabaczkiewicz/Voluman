@@ -1,10 +1,28 @@
 <app-breadcrumb [path]=path [back]="'menu'"></app-breadcrumb>
 <div class="row w-100">
-  <div class="col-sm-4  justify-content-md-center">
-    <div class="row mt-lg-5">
-      <button type="button" class="btn btn-success w-25 me-2 ms-lg-5" (click)="onSaveClick()">Zapisz</button>
-      <button type="button" class="btn btn-outline-dark w-25" (click)="onUnDoClick()">Anuluj zmiany</button>
-    </div>
+  <div class="col-sm-4  justify-content-md-center" style="max-width: 27rem;">
+    <div class="row">
+      <button type="button" class="btn btn-outline-dark menu-btn ms-lg-5" (click)="onClick()">
+        <div class="btn-icon-row row">
+          <i class="bi bi-unindent btn-icon"></i></div>
+        <div class="btn-text">
+          <span>Wróć do Menu</span>
+        </div>
+      </button>
+      <br>
+      <div class="row mt-4">
+      <button type="button" class="btn btn-success me-2 ms-lg-5 menu-btn" (click)="onSaveClick()">  <div class="btn-icon-row row">
+        <i class="bi btn-icon bi-database-fill-down"></i></div>
+        <div class="btn-text">
+          <span>Zapisz</span>
+        </div>
+      </button>
+      <button type="button" class="btn  btn-outline-dark menu-btn" (click)="onUnDoClick()">
+        <i class="bi btn-icon bi-eraser"></i><div class="btn-text">
+          <span>Anuluj zmiany</span>
+      </div>
+      </button>
+    </div></div>
     <div class="row mt-lg-5  bottom-0 start-0 mb-5  ">
       <div class="card ms-lg-5 " style="max-width: 18rem;">
         <div class="card-body">
@@ -28,3 +46,4 @@
 <app-calendar #calendar [needs]="days" [isSchedule]=false></app-calendar>
   </div>
 </div>
+

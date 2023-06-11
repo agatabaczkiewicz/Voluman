@@ -6,7 +6,14 @@
   align-items: center;
   text-align: center;
 }
+.logout-btn{
+  width:7rem;
+  height: 9rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
+}
 .btn-icon-row{
   //transform: scale(6);
   //display: inline-block !important;
@@ -31,15 +38,6 @@
   font-size: 4rem;
 }
 
-
-.logout-btn{
-  width:7rem;
-  height: 9rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-}
 
 .btn-text{
   font-size: large;

@@ -1,3 +1,7 @@
+.control-label:after {
+  content:"*";
+  color:red;
+}
 .menu-btn{
   width:10rem;
   height: 12rem;
@@ -40,7 +44,6 @@
   text-align: center;
 
 }
-
 .btn-text{
   font-size: large;
   font-weight: bolder;

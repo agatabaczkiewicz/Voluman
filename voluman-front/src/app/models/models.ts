@@ -1,7 +1,8 @@
 
 export interface ScheduleClass{
-  maxLoad:string,
-  load:string,
+  maxLoad:number,
+  load:number,
+  accepted?:boolean,
   schedule:NeedClass[]
 }
 export interface NeedClass{
@@ -32,4 +33,15 @@ export interface ActionDescClass{
   place?: string,
   description?: string,
   reaction?:string,
+}
+export enum EventTypes {
+  Success = 'success',
+  Info = 'info',
+  Warning = 'warning',
+  Error = 'error',
+}
+export interface ToastEvent {
+  type: EventTypes;
+  title: string;
+  message: string;
 }

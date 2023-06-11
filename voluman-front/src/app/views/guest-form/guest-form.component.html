@@ -1,0 +1,74 @@
+<app-breadcrumb [path]=path></app-breadcrumb>
+<!--<nav class="mt-2 mx-lg-4">-->
+<div class="row w-100 ">
+  <div class="col-5  mt-2 mx-lg-4">
+    <div class="row mb-5" >
+  <button type="button" class="btn btn-outline-dark logout-btn " (click)="onClick()">
+    <div class="logout-icon-row row">
+      <i class="bi bi-unindent logout-icon"></i></div>
+    <div class="">
+      <span>Wróć do Menu</span>
+    </div>
+  </button>
+    <!--</nav>--></div>
+
+  <div class="row" >
+  <button type="button" class="btn btn-success logout-btn" (click)="onSaveClick()">  <div class="logout-icon-row row">
+    <i class="bi logout-icon bi-database-fill-down"></i></div>
+    <div class="">
+      <span>Zapisz</span>
+    </div>
+  </button></div>
+  </div>
+<div class="col-5 w-25 mb-lg-5">
+
+    <h4>Podaj swoje dane</h4>
+    <form  [formGroup]=form >
+
+        <label class="control-label" for="name" >Imię</label>
+        <input type="text" class="form-control" id="name"
+               required ng-required="true"
+               formControlName=name name="name">
+        <label class="control-label" for="surname">Nazwisko</label>
+        <input type="text" class="form-control" id="surname"
+               required
+               formControlName="surname" name="name">
+      <label class="control-label" for="email">Adres email</label>
+      <input type="email" class="form-control" id="email"
+             required
+             formControlName="email" name="email">
+
+      <label class="control-label" for="phone">Numer Telefonu</label>
+      <input type="tel" class="form-control" id="phone"
+             required
+             formControlName="phone" name="phone">
+
+      <label class="control-label" for="city">Miasto</label>
+      <input type="text" class="form-control" id="city"
+             required
+             formControlName="city" name="city">
+
+      <label class="control-label" for="zip_code">Kod pocztowy</label>
+      <input type="postal" class="form-control" id="zip_code"
+             required
+             formControlName="zip_code" name="zip_code">
+
+      <label class="control-label" for="street">Adres</label>
+      <input type="text" class="form-control" id="street"
+             required
+             formControlName="street" name="street">
+
+      <label class="control-label" for="password">Wymyśl i wpisz hasło</label>
+      <input type="password" class="form-control" id="password"
+             required
+             formControlName="password" name="password">
+
+      <label class="control-label" for="passwordConfirm">Powtórz hasło</label>
+      <input type="password" class="form-control" id="passwordConfirm"
+             required
+             formControlName="passwordConfirm" name="passwordConfirm">
+    </form>
+
+
+  </div>
+</div>

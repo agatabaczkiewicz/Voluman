@@ -1,5 +1,9 @@
-<div class="cell blur"
+<div *ngIf="day" class="cell blur"
      (click)="onCellClick($event)" [ngStyle] ="{'background' : style}" >
+  <b>{{content}}</b>
+</div>
+<div *ngIf="!day" class="cell blur"
+      [ngStyle] ="{'background' : style}" >
   <b>{{content}}</b>
 </div>
 

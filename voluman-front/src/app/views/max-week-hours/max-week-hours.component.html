@@ -2,48 +2,69 @@
 <div class="row w-100">
   <div class="col-sm-4  justify-content-md-center">
     <div class="row mt-lg-5">
-      <button type="button" class="btn btn-secondary w-25 me-2 ms-lg-5">Secondary</button>
-      <button type="button" class="btn btn-secondary w-25">Secondary</button>
+      <button type="button" class="btn btn-outline-dark menu-btn ms-lg-5" (click)="onClick()">
+        <div class="btn-icon-row row">
+          <i class="bi bi-unindent btn-icon"></i></div>
+        <div class="btn-text">
+          <span>Wróć do Menu</span>
+        </div>
+      </button>
+      <br>
+      <div class="row mt-4">
+        <button type="button" class="btn btn-success me-2 ms-lg-5 menu-btn" (click)="onSaveClick()">  <div class="btn-icon-row row">
+          <i class="bi btn-icon bi-database-fill-down"></i></div>
+          <div class="btn-text">
+            <span>Zapisz</span>
+          </div>
+        </button>
+        <button type="button" class="btn  btn-outline-dark menu-btn" (click)="onDismissClick()">
+          <i class="bi btn-icon bi-eraser"></i><div class="btn-text">
+          <span>Anuluj zmiany</span>
+        </div>
+        </button>
+      </div>
     </div>
+
+
   </div>
   <div class="col-lg-5 ms-lg-5">
     <div class="table-responsive-sm">
-      <table class="table  table-bordered main-table  ">
-        <thead class="table-light">
+      <table class="table table-primary table-striped table-bordered main-table  ">
+        <thead >
         <tr>
           <th scope="col"></th>
-          <th scope="col">Daty</th>
-          <th scope="col">Ile godz?</th>
+          <th scope="col-6">Daty</th>
+          <th scope="col-sm-2">Ile godz?</th>
         </tr>
         </thead>
         <tbody>
         <tr>
           <td>Bieżący tydzień</td>
-          <td></td>
+          <td>{{ date1}}</td>
           <td><input type="number" [formControl]="maxNow" name="maxNow" class="form-control">
           </td>
         </tr>
         <tr>
           <td>Następny tydzień</td>
-          <td>5.06-11.06</td>
-          <td><input type="number" [formControl]="max1" name="max1" class="form-control">
+          <td>{{date2}}</td>
+          <td><input type="number" [formControl]="max1" name="max1"  class="form-control">
           </td>
         </tr>
         <tr>
           <td>2. kolejny tydzień</td>
-          <td></td>
+          <td>{{date3}}</td>
           <td><input type="number" [formControl]="max2" name="max2" class="form-control">
           </td>
         </tr>
         <tr>
           <td>3. koljeny tydzień</td>
-          <td></td>
+          <td>{{date4}}</td>
           <td><input type="number" [formControl]="max3" name="max3" class="form-control">
           </td>
         </tr>
         <tr>
           <td>4. kolejny tydzień</td>
-          <td></td>
+          <td>{{date5}}</td>
           <td><input type="number" [formControl]="max4" name="max4" class="form-control">
           </td>
         </tr>

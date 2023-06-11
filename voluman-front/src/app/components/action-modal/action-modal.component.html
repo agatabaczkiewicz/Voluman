@@ -11,45 +11,28 @@
         <p>{{action.place}}</p>
         <p>{{action.startDate}} - {{action.endDate}}</p>
         <p>{{action.description}}</p>
-                  <button type="button" class="btn btn-outline-dark menu-btn" (click)="onSmileClick()" [disabled]="action.reaction == ':)'" >
+                  <button *ngIf = "guest!='true'" type="button" class="btn btn-outline-dark menu-btn" (click)="onSmileClick()" [disabled]="action.reaction == ':)'" >
                     <div class="btn-icon-row row">
                       <i class="bi bi-emoji-smile btn-icon" ></i></div>
                     <div class="btn-text">
                       Tak
                     </div>
                   </button>
-        <button type="button" class="btn btn-outline-dark menu-btn" (click)="onNeutralCLick()"  [disabled]="action.reaction == ':|'" >
+        <button *ngIf = "guest!='true'" type="button" class="btn btn-outline-dark menu-btn" (click)="onNeutralCLick()"  [disabled]="action.reaction == ':|'" >
           <div class="btn-icon-row row">
             <i class="bi bi-emoji-neutral btn-icon" ></i></div>
           <div class="btn-text">
             Raczej Tak
           </div>
         </button>
-        <button type="button" class="btn btn-outline-dark menu-btn"  (click)="onRejectCLick()"  [disabled]="action.reaction == ':('">
+        <button *ngIf = "guest!='true'"  type="button" class="btn btn-outline-dark menu-btn"  (click)="onRejectCLick()"  [disabled]="action.reaction == ':('">
           <div class="btn-icon-row row">
             <i class="bi bi-emoji-frown btn-icon" ></i></div>
           <div class="btn-text">
             Nie
           </div>
         </button>
-<!--        <div class="col">-->
-<!--          <button type="button" class="btn btn-outline-dark menu-btn" (click)="onScheduleClick()">-->
-<!--            <div class="btn-icon-row row">-->
-<!--              <i class="bi bi-list-check btn-icon" ></i></div>-->
-<!--            <div class="btn-text">-->
-<!--              Dostępne terminy-->
-<!--            </div>-->
-<!--          </button>-->
-<!--        </div>-->
-<!--        <div class="col">-->
-<!--          <button type="button" class="btn btn-outline-dark menu-btn" (click)="onMaxClick()">-->
-<!--            <div class="btn-icon-row row">-->
-<!--              <i class="bi bi-calendar-week btn-icon"></i></div>-->
-<!--            <div class="btn-text">-->
-<!--              <span>Maksymalne obciążenie</span>-->
-<!--            </div>-->
-<!--          </button>-->
-<!--        </div>-->
+
       </div>
     </div>
   </div>

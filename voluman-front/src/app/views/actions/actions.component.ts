@@ -1,6 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActionClass, ActionDescClass, NeedClass} from "../../models/models";
-import {StorageService} from "../../components/services/storage.service";
+import {StorageService} from "../../services/storage.service";
+import {Router} from "@angular/router";
+import {ToastService} from "../../services/toast.service";
 
 @Component({
   selector: 'app-actions',
@@ -12,27 +14,35 @@ export class ActionsComponent implements OnInit, OnDestroy {
   toSee: ActionDescClass[] = [];
   yours: ActionDescClass[] = [];
   rejected: ActionDescClass[] = [];
+  guest: string | null = "false";
+  constructor(private storageService: StorageService,
+              private router: Router,
+              private toastService: ToastService) {
 
-  constructor(private storageService: StorageService) {
+    this.guest = this.storageService.getData("guest");
     let actions = this.storageService.getData("actions")
     if (actions != null) {
-      let actionsList = JSON.parse(actions).actions as ActionDescClass[];
-      for (let i = 0; i < actionsList.length; i++) {
-        if(actionsList[i].reaction == ":)" || actionsList[i].reaction == ":|" ){
-          this.yours.push(actionsList[i]);
-        }
-        else if(actionsList[i].reaction == ":("){
-          this.rejected.push(actionsList[i]);
-        } else{
-          this.toSee.push(actionsList[i]);
+      if(this.guest  == "true"){
+        let actionsList = JSON.parse(actions).actions as ActionDescClass[];
+        this.toSee = actionsList;
+      }else {
+        let actionsList = JSON.parse(actions).actions as ActionDescClass[];
+        for (let i = 0; i < actionsList.length; i++) {
+          if (actionsList[i].reaction == ":)" || actionsList[i].reaction == ":|") {
+            this.yours.push(actionsList[i]);
+          } else if (actionsList[i].reaction == ":(") {
+            this.rejected.push(actionsList[i]);
+          } else {
+            this.toSee.push(actionsList[i]);
+          }
         }
       }
     }
   }
 
   ngOnDestroy() {
-    let plus = this.toSee.concat(this.rejected).concat(this.yours);
-    this.storageService.saveData("actions", JSON.stringify({"actions": plus}));
+    // let plus = this.toSee.concat(this.rejected).concat(this.yours);
+    // this.storageService.saveData("actions", JSON.stringify({"actions": plus}));
   }
 
   click($event:ActionDescClass) {
@@ -42,17 +52,21 @@ export class ActionsComponent implements OnInit, OnDestroy {
 
   yesClick($event:ActionDescClass) {
     this.yours.push($event);
+    this.toastService.show('Akcja została dodana do Twoich akcji',{ classname: 'bg-success text-light'});
   }
 
   mehClick($event:ActionDescClass) {
     let index = this.toSee.findIndex(x=> x.name == $event.name);
     this.toSee.splice(index, 1);
     this.yours.push($event);
+    this.toastService.show('Akcja została dodana do Twoich akcji jako mniej ważna',{ classname: 'bg-success text-light'});
+
   }
 
   deleteFromList(action: ActionDescClass){
     let index = this.toSee.findIndex(x=> x.name == action.name);
     if (action.reaction == ":)" || action.reaction == ":|"){;
+      this.toastService.show('Akcja została dodana do Twoich akcji',{ classname: 'bg-success text-light'});
       if(index == -1){
         index = this.rejected.findIndex(x=> x.name == action.name);
         this.rejected.splice(index, 1);
@@ -71,10 +85,18 @@ export class ActionsComponent implements OnInit, OnDestroy {
       }
       this.toSee.splice(index, 1);
       this.rejected.push(action);
+      this.toastService.show('Akcja została usunięta z Twoich akcji',{ classname: 'bg-success text-light'});
 
     }
   }
   ngOnInit() {
 
+  }
+  onClick(){
+    if(this.guest=="true"){
+      this.router.navigate(['guest-menu']);
+    }else {
+      this.router.navigate(['menu']);
+    }
   }
 }

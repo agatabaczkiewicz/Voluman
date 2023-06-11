@@ -1,8 +1,9 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {Router} from "@angular/router";
-import {StorageService} from "../../components/services/storage.service";
+import {StorageService} from "../../services/storage.service";
 import {NeedClass} from "../../models/models";
 import {CalendarComponent} from "../../components/calendar/calendar.component";
+import {ToastService} from "../../services/toast.service";
 
 @Component({
   selector: 'app-availability',
@@ -14,11 +15,11 @@ export class AvailabilityComponent implements OnInit {
   @ViewChild(CalendarComponent) calendar: CalendarComponent | undefined;
 
   constructor(public router: Router,
-              private storageService: StorageService,) {
+              private storageService: StorageService,private toastService:ToastService) {
     this.getDataStorage();
   }
 
-  path = ["Główne Menu", "Twoja dostępność"];
+  path = ["Główne Menu", "Dstępność", "Terminy"];
   days: NeedClass[] = [];
 
   ngOnInit(): void {
@@ -27,6 +28,7 @@ export class AvailabilityComponent implements OnInit {
 
   onSaveClick() {
     this.storageService.saveData('availability', JSON.stringify(this.calendar?.needs));
+    this.toastService.show('Terminy Zostały zapisane',{ classname: 'bg-success text-light'});
   }
 
   onUnDoClick() {
@@ -47,5 +49,8 @@ export class AvailabilityComponent implements OnInit {
       }
     }
 
+  }
+  onClick(){
+    this.router.navigate(['menu']);
   }
 }

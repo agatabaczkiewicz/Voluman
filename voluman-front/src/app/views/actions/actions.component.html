@@ -1,6 +1,15 @@
 <app-breadcrumb [path]=path [back]="'menu'"></app-breadcrumb>
-<div class="row justify-content-md-center">
-<div class="card ms-lg-5  card-your " style="max-width: 18rem;">
+<div class="row ">
+  <button type="button" class="btn btn-outline-dark menu-btn ms-lg-5" (click)="onClick()">
+    <div class="btn-icon-row row">
+      <i class="bi bi-unindent  btn-icon"></i></div>
+    <div class="btn-text">
+      <span>Wróć do Menu</span>
+    </div>
+  </button>
+</div>
+  <div class="row justify-content-md-center">
+<div *ngIf = "guest!='true'" class="card ms-lg-5  card-your " style="max-width: 18rem;">
   <div class="card-body">
     <h5 class="card-title ">Twoje akcje</h5>
     <hr>
@@ -22,7 +31,7 @@
     </div>
   </div>
 </div>
-<div class="card ms-lg-5 card-reject" style="max-width: 18rem;">
+<div *ngIf = "guest!='true'" class="card ms-lg-5 card-reject" style="max-width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Akcje odrzucone</h5>
     <hr>
@@ -34,4 +43,4 @@
   </div>
 </div>
 </div>
-<app-action-modal #actionModal (reactionEmit)="click($event)"></app-action-modal>
+<app-action-modal #actionModal [guest] = "'true'" (reactionEmit)="click($event)"></app-action-modal>

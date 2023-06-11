@@ -1,38 +1,58 @@
 <app-breadcrumb [path]=path [back]="'menu'"></app-breadcrumb>
 <div class="row w-100">
-  <div class="col-sm-4  justify-content-md-center">
-    <div class="row mt-lg-5">
-      <button type="button" class="btn btn-success w-25 me-2 ms-lg-5">Akceptuj plan tygodnia </button>
-    </div>
-    <div class="row mt-lg-5   start-0 mb-5  ">
-      <div class="card ms-lg-5 " style="max-width: 18rem;">
+  <div class="col-sm-4  justify-content-md-center"style="max-width: 27rem;">
+    <div class="row mt-lg-5" >
+      <button type="button" class="btn btn-outline-dark menu-btn ms-lg-5" (click)="onClick()">
+        <div class="btn-icon-row row">
+          <i class="bi bi-unindent btn-icon"></i></div>
+        <div class="btn-text">
+          <span>Wróć do Menu</span>
+        </div>
+      </button>
+      <div class="card border-primary ms-4 " style="max-width: 11rem;">
         <div class="card-body">
-          <h5 class="card-title">Obciążenie tygodniowe[godz]</h5>
+          <h5 class="card-title">Obciążenie tygodniowe [godz]</h5>
           <div class="card-text">
-            <b>MAX:</b><br>
-            <b>Plan:</b>
+            <hr>
+            MAX: {{schedule.maxLoad}}<br>
+            <hr>
+            <p [style.font-weight]="schedule.maxLoad < schedule.load ? 'bold':'normal'">Plan: {{schedule.load}}
           </div>
         </div>
       </div>
+
+
     </div>
-    <div class="row mt-lg-5  bottom-0 start-0 mb-5  ">
-      <div class="card ms-lg-5 " style="max-width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Legenda</h5>
-          <div class="card-text">
-            <b>Klik</b><br>
-            <b>Shift + Klik</b>
-            <div class="square"></div>
-            <div class="square stripes "></div>
-            <div class="square text-center pb-2 pt-0"><p>---</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="row mt-2" *ngIf="schedule.accepted==undefined">
+      <button type="button" class="btn btn-outline-success btn-accept  me-2 ms-lg-5" (click)="onAccept()"><i class="bi bi-check-lg i-accept"></i> Akceptuj plan tygodnia</button>
   </div>
-  <div class="col">
-    <app-calendar [needs]=availability [schedule] = "schedule.schedule" [isSchedule]=true></app-calendar>
+
+
+  <div class="row mt-lg-5  bottom-0 start-0 mb-5  ">
+    <div class="card ms-lg-5 " style="max-width: 23rem;">
+      <div class="card-body">
+        <h5 class="card-title">Legenda</h5>
+        <div class="card-text">
+          <div class="line">
+            <div class="square text-center pb-2 pt-0"><p>---</p></div><div> - Tu nie ma Twoich akcji</div></div>
+          <div class="line">
+            <div class="square" style="background-color:#FFFACD;"></div><div> - Tu są Twoje akcje i niebrakuje ludzi</div></div>
+          <div class="line">
+            <div class="square" style="background-color: pink;"></div><div> - Tu są Twoje akcje i brakuje ludzi</div></div>
+          <div class="line">
+            <div class="square stripes "></div><div> - Tu jesteś dostępny</div></div>
+          <div class="line">
+            <div class="square " style="background-color: #B9D9EB;"></div><div> - Tu jesteś dostępny</div></div>
+
+
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<app-calendar-day></app-calendar-day>
+<div class="col">
+  <app-calendar [needs]=availability [schedule]="schedule" [isSchedule]=true></app-calendar>
+</div>
+</div>
+
 
