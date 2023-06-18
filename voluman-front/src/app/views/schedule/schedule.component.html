@@ -1,6 +1,6 @@
-<app-breadcrumb [path]=path [back]="'menu'"></app-breadcrumb>
 <div class="row w-100">
   <div class="col-sm-4  justify-content-md-center"style="max-width: 27rem;">
+    <app-breadcrumb [path]=path [back]="'menu'"></app-breadcrumb>
     <div class="row mt-lg-5" >
       <button type="button" class="btn btn-outline-dark menu-btn ms-lg-5" (click)="onClick()">
         <div class="btn-icon-row row">
@@ -23,8 +23,8 @@
 
 
     </div>
-    <div class="row mt-2" *ngIf="schedule.accepted==undefined">
-      <button type="button" class="btn btn-outline-success btn-accept  me-2 ms-lg-5" (click)="onAccept()"><i class="bi bi-check-lg i-accept"></i> Akceptuj plan tygodnia</button>
+    <div class="row " *ngIf="schedule.accepted==undefined">
+      <button type="button" class="btn btn-accept mt-2  me-2 ms-lg-5" (click)="onAccept()"><i class="bi bi-check-lg i-accept"></i> Akceptuj plan tygodnia</button>
   </div>
 
 
@@ -40,8 +40,6 @@
           <div class="line">
             <div class="square" style="background-color: pink;"></div><div> - Tu są Twoje akcje i brakuje ludzi</div></div>
           <div class="line">
-            <div class="square stripes "></div><div> - Tu jesteś dostępny</div></div>
-          <div class="line">
             <div class="square " style="background-color: #B9D9EB;"></div><div> - Tu jesteś dostępny</div></div>
 
 
@@ -50,7 +48,7 @@
     </div>
   </div>
 </div>
-<div class="col">
+<div class="col mt-3 ms-lg-5 justify-content-end">
   <app-calendar [needs]=availability [schedule]="schedule" [isSchedule]=true></app-calendar>
 </div>
 </div>

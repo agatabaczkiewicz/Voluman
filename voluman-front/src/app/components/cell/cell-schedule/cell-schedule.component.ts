@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, ElementRef, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {SlotClass} from "../../../models/models";
 
 @Component({
@@ -28,15 +28,18 @@ export class CellScheduleComponent implements OnInit{
   actionNumber:number=0;
   avail='repeating-linear-gradient(180deg,transparent,transparent 5.75px,#6495ED 5.75px,#6495ED 7.5px)'
 
+  constructor(private myElement: ElementRef) {
+  }
+
   onCellClick(event:any) {
   if(this.style!= this.noActions) {
-    if (this.style.indexOf(this.yourShift) != -1) {
+    if (this.style==this.yourShift) {
 
         // @ts-ignore
         if (this.scheduleSlot.actions[this.actionNumber].need > this.scheduleSlot.actions[this.actionNumber].scheduled - 1) {
-          this.style = this.avail.replace(this.noActions, this.missingPeople);
+          this.style =  this.missingPeople;
         } else {
-          this.style = this.avail.replace(this.noActions, this.noMissingPeople);
+          this.style = this.noMissingPeople;
         }
         this.loadEmit.emit(-1);
         // @ts-ignore
@@ -52,7 +55,7 @@ export class CellScheduleComponent implements OnInit{
         // @ts-ignore
         this.scheduleSlot.actions[this.actionNumber].scheduled = this.scheduleSlot.actions[this.actionNumber].scheduled - 1;
       }
-     else if (this.style.indexOf(this.noMissingPeople) != -1 || this.style.indexOf(this.missingPeople) !=-1) {
+     else if (this.style==this.noMissingPeople  || this.style==this.missingPeople) {
       this.style = this.yourShift;
       // @ts-ignore
       this.scheduleSlot.actions[this.actionNumber].your = true;
@@ -62,6 +65,7 @@ export class CellScheduleComponent implements OnInit{
       // @ts-ignore
       this.scheduleSlot.actions[this.actionNumber].scheduled = this.scheduleSlot.actions[this.actionNumber].scheduled + 1;
     }
+    // this.myElement.nativeElement.parentElement.style.backgroundColor=this.style;
     }
   }
 
@@ -98,10 +102,8 @@ export class CellScheduleComponent implements OnInit{
         this.style = this.yourShift
       }
     }
-    if(this.needSlot.availability){
-      let nowColor = this.style;
-      this.style = this.avail.replace('transparent', nowColor);
-    }
+    // this.myElement.nativeElement.parentElement.style.backgroundColor=this.style;
+
 
 
   }

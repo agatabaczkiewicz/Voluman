@@ -1,5 +1,5 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {NeedClass, SlotClass} from "../../../models/models";
+import {Component, ElementRef, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {SlotClass} from "../../../models/models";
 
 @Component({
   selector: 'app-availability-cell',
@@ -14,28 +14,34 @@ export class CellAvailabilityComponent implements OnInit{
   @Input('value')value:string='';
   @Input('th') th:boolean = false;
   @Input('wasClick') wasClick:boolean = false;
-  @Output()wasClickEmit = new EventEmitter<SlotClass>();
+  @Output()wasClickEmit = new EventEmitter<any>();
   content='';
-  style = 'transparent'
+  public style = 'transparent'
   striped='repeating-linear-gradient(180deg,transparent,transparent 3.75px,#6495ED 3.75px,#6495ED 7.5px)'
-  onCellClick(event:any) {
 
-      if (this.style == this.striped) {
-        this.style = 'transparent';
-        this.needSlot.availability=false;
-      } else {
-        this.style = this.striped;
-        this.needSlot.availability=true;
-      if(event.shiftKey){
-        this.wasClickEmit.emit(this.needSlot);
-      }
+  constructor(public myElement: ElementRef) {
+  }
+  onCellClick(event:any) {
+  if(!this.th) {
+    if (this.style == this.striped) {
+      this.style = 'transparent';
+      this.needSlot.availability = false;
+    } else {
+      this.style = this.striped;
+      this.needSlot.availability = true;
+
+        let id = this.myElement.nativeElement.id;
+        this.wasClickEmit.emit({slot:this.needSlot, id: id, isShift: event.shiftKey });
+
     }
   }
-  over(event:any) {
-    if (event.shiftKey && this.wasClick) {
-        this.style = this.striped;
-    }
   }
+
+  // over(event:any) {
+  //   if (event.shiftKey && this.wasClick) {
+  //       this.style = this.striped;
+  //   }
+  // }
 
   ngOnInit(): void {
     if(!this.th) {

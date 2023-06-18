@@ -1,7 +1,7 @@
 <ng-template #calendarDayModal let-modal class="modal-content" let-c="close" let-d="dismiss">
   <div class="modal-content modal-content2">
     <div class="modal-header">
-      <h5 class="modal-title">Edytuj dyżury w dniu {{date}}</h5>
+      <h5 class="modal-title">Zmień dyżury w dniu {{date}}</h5>
       <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
         <i class="bi bi-x-lg"></i>
       </button>
@@ -25,26 +25,22 @@
             </div>
           </div>
           <div class="row mt-3 mb-2">
-            <button type="button" class="btn btn-sm btn-success w-25 me-2 ms-lg-5" (click)="onSaveClick()"><i class="bi bi-database-fill-down"></i> Zapisz</button>
+            <button type="button" class="btn btn-sm btn-accept w-25 me-2 ms-lg-5" (click)="onSaveClick()"><i class="bi bi-database-fill-down"></i> Zapisz</button>
             <button type="button" class="btn btn-sm btn-outline-dark w-25" (click)="onUnDoClick()"><i class="bi bi-eraser"></i> Anuluj zmiany</button>
           </div>
           <div class="row mt-lg-5 position-absolute bottom-0 start-0 mb-4  ">
             <div class="card ms-lg-5 " style="width: 18rem;">
               <div class="card-body">
-                <h5 class="card-title">Legenda</h5>
+                <h5 class="card-title">{{'legend' | translate}}</h5>
                 <div class="card-text">
                   <div class="line">
-                    <div class="square text-center pb-2 pt-0"><p>---</p></div><div> - Tu nie ma Twoich akcji</div></div>
+                    <div class="square text-center pb-2 pt-0"><p>---</p></div><div class = "line-text"> {{'no.your.action' |translate}}</div></div>
                   <div class="line">
-                    <div class="square" style="background-color:#FFFACD;"></div><div> - Tu są Twoje akcje i niebrakuje ludzi</div></div>
+                    <div class="square" style="background-color:#FFFACD;"></div><div class = "line-text"> Tu są Twoje akcje i nie brakuje ludzi</div></div>
                   <div class="line">
-                    <div class="square" style="background-color: pink;"></div><div> - Tu są Twoje akcje i brakuje ludzi</div></div>
+                    <div class="square" style="background-color: pink;"></div><div class = "line-text"> Tu są Twoje akcje i brakuje ludzi</div></div>
                   <div class="line">
-                    <div class="square stripes "></div><div> - Tu jesteś dostępny</div></div>
-                  <div class="line">
-                    <div class="square " style="background-color: #B9D9EB;"></div><div> - Tu jesteś dostępny</div></div>
-
-
+                    <div class="square " style="background-color: #B9D9EB;"></div><div class = "line-text"> Tu jesteś dostępny</div></div>
                 </div>
               </div>
             </div>
@@ -52,31 +48,20 @@
         </div>
         <div class="col">
       <div class="container w-75 justify-content-center align-self-end">
-        <div class="table-responsive-sm">
-          <table class="table  table-bordered main-table  ">
-            <tbody>
-            <tr>
-              <td>
-                <table class="table table-bordered ">
-                  <tr class="times-th " *ngFor="let slotTime of times">
-                    <td class="td-custom">
-                      <app-availability-cell class="td-custom" [value]=slotTime [th]=true></app-availability-cell>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td *ngFor="let day of  [].constructor(actionCount); index as i">
-                <table class="table table-bordered ">
-                  <tr *ngFor="let shift of need; index as j">
-                    <td class="td-custom">
-                      <app-cell-schedule class="td-custom" (loadEmit)="loadChange($event)" [day]="true" [needSlot]=shift [scheduleSlot]="schedule[j]"></app-cell-schedule>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            </tbody>
-          </table>
+        <div class="row">
+          <app-availability-cell class="td-custom border" style="text-align: center" [value]=date [th]=true></app-availability-cell>
+        </div>
+        <div class="row">
+            <div class="col">
+                  <div class=" row times-th " *ngFor="let slotTime of times">
+                      <app-availability-cell class="td-custom border" style="text-align: center"  [value]=slotTime [th]=true></app-availability-cell>
+                  </div>
+            </div>
+              <div class="col" *ngFor="let day of  [].constructor(actionCount); index as i">
+                  <div class="row" *ngFor="let shift of need; index as j">
+                      <app-cell-schedule class="td-custom border" style="text-align: center"  (loadEmit)="loadChange($event)" [day]="true" [needSlot]=shift [scheduleSlot]="schedule[j]"></app-cell-schedule>
+                  </div>
+            </div>
         </div>
       </div>
     </div>

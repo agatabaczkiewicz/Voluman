@@ -7,9 +7,26 @@
   //justify-content: space-between;
 
 }
+.btn-accept{
+  color: #fff;
+  background-color: #146c43;
+  border-color: #198754; /*set the color you want here*/
+
+}
+
+.btn-accept:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754; /*set the color you want here*/
+}
+
 
 .td-custom{
-  height: 0.4rem !important;
+  min-height: 3.0rem !important;
+  height: 3.25rem !important;
+  max-height: 3.5rem !important;
+  border : black;
+  display: flex;
 }
 th{
   font-size: smaller;
@@ -39,9 +56,14 @@ th{
 
 .square {
   height: 20px;
-  width: 35px;
+  min-width: 35px;
   background-color: transparent;
   margin-bottom: 5px;
   border:1px solid #000;
-  margin-right: 5px;
+
+}
+
+.line-text{
+  text-wrap: normal;
+  margin-left: 5px;
 }

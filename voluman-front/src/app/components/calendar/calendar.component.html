@@ -1,64 +1,46 @@
-<div #Calendar class="container w-100 justify-content-center align-self-end">
-  <div class="table-responsive-sm">
-    <table class="table  table-bordered main-table  ">
-      <thead class="table-light">
-      <tr>
-        <th scope="col">
-          <button class="btn btn-sm btn-light"><i class="bi bi-arrow-left-circle"></i></button>
-        </th>
-        <th scope="col"></th>
-        <th class="td-custom" *ngFor="let x of [].constructor(7); let i = index" scope="col">{{days[i]}}, {{needs[i+week].date}}</th>
-        <th scope="col">
-          <button class="btn btn-sm btn-light" (click)="onNextWeekClick()"><i class="bi bi-arrow-right-circle"></i></button>
-        </th>
-      </tr>
-      <tr *ngIf="isSchedule">
-        <th scope="col"></th>
-        <th scope="col"></th>
-        <th  style="text-align: center" class="td-custom" *ngFor="let x of [].constructor(7); let i = index" scope="col">
-          <button *ngIf="schedule.accepted==undefined" type="button" class="btn btn-sm btn-outline-dark" (click)="onOpenDayClick(needs[i+week], schedule.schedule[i+week])">Otwórz</button>
-        </th>
-        <th scope="col"></th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>
-          <table class="table">
+<div #Calendar class="container justify-content-center ">
 
-          </table>
-        </td>
-        <td>
-          <table class="table table-bordered ">
-            <tr class="times-th " *ngFor="let slotTime of times">
-              <td class="td-custom">
-                <app-availability-cell class="td-custom" [value]=slotTime [th]=true></app-availability-cell>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td *ngFor="let day of  [].constructor(7); index as i">
-          <table style="text-align: center" class="table table-bordered ">
-            <tr *ngFor="let shift of needs[i+week].slots; index as j">
-              <td style="text-align: center" class="td-custom">
-                <app-availability-cell *ngIf="!this.isSchedule" class="td-custom" (wasClickEmit)="wasClickEvent($event)" [wasClick]=wasClick
+      <div class="row">
+        <div class="col "  style="text-align: center" *ngIf="!isSchedule">
+          <div class="row td-custom border">
+                    <button class="btn btn-sm btn-light p-0"><i class="bi bi-caret-left-fill arrow-icon"></i></button>
+        </div>
+        </div>
+        <div class="col ">
+          <div class="row td-custom" >
+            <app-availability-cell class="td-custom  border"  [th]=true></app-availability-cell>
+          </div>
+          <div class="row ">
+            <app-availability-cell class=" btn-row  border"  [th]=true></app-availability-cell>
+          </div>
+            <div class="row " *ngFor="let slotTime of times">
+                <app-availability-cell class="td-custom  border" [value]=slotTime [th]=true></app-availability-cell>
+            </div>
+        </div>
+        <div class="col" *ngFor="let day of  [].constructor(7); index as i">
+          <div class="row td-custom " style="text-align: center">
+            <app-availability-cell class="td-custom  border" [value]=days[i] [th]=true></app-availability-cell>
+          </div>
+          <div class="row " style="text-align: center">
+            <button *ngIf="schedule.accepted==undefined" type="button" class="btn btn-sm btn-outline-dark btn-row" (click)="onOpenDayClick(needs[i+week], schedule.schedule[i+week])">Otwórz</button>
+          </div>
+          <div class="row td-custom" style="text-align: center" *ngFor="let shift of needs[i+week].slots; index as j">
+                <app-availability-cell #cells  id = "{{i}}-{{j}}" *ngIf="!this.isSchedule" class="td-custom border align-items-stretch " (wasClickEmit)="wasClickEvent($event)" [wasClick]=wasClick
                                    [needSlot]=shift></app-availability-cell>
-                <app-cell-schedule *ngIf="this.isSchedule" class="td-custom" (wasClickEmit)="wasClickEvent($event)" [wasClick]=wasClick
+                <app-cell-schedule *ngIf="this.isSchedule" class="td-custom border align-items-stretch " (wasClickEmit)="wasClickEvent($event)" [wasClick]=wasClick
                                        (loadEmit)="onLoadChange($event)"
                                    [needSlot]=shift [scheduleSlot]="schedule.schedule[i+week].slots[j]"></app-cell-schedule>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table class="table">
-          </table>
-        </td>
-      </tr>
-      </tbody>
-    </table>
+            </div>
+        </div>
+        <div class="col "  style="text-align: center" *ngIf="!isSchedule">
+          <div class="row td-custom border">
+                 <button class="btn btn-sm btn-light p-0 end-0" (click)="onNextWeekClick()"><i class="bi bi-caret-right-fill arrow-icon"></i></button>
+          </div>
+        </div>
+      </div>
+
   </div>
-</div>
+
 <app-calendar-day (saveSignal)="onSave($event)" #dayModal></app-calendar-day>
 
 

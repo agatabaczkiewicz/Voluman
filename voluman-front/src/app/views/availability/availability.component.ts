@@ -4,6 +4,7 @@ import {StorageService} from "../../services/storage.service";
 import {NeedClass} from "../../models/models";
 import {CalendarComponent} from "../../components/calendar/calendar.component";
 import {ToastService} from "../../services/toast.service";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-availability',
@@ -15,7 +16,8 @@ export class AvailabilityComponent implements OnInit {
   @ViewChild(CalendarComponent) calendar: CalendarComponent | undefined;
 
   constructor(public router: Router,
-              private storageService: StorageService,private toastService:ToastService) {
+              private storageService: StorageService,private toastService:ToastService,
+              private translateService: TranslateService) {
     this.getDataStorage();
   }
 

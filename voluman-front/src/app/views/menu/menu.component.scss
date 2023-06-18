@@ -1,27 +1,20 @@
 .menu-btn{
-  width:10rem;
-  height: 12rem;
-  //display: flex;
+
+  width:9rem;
+  height: 11rem;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
+.container{
+  width: 65%;
+}
 .btn-icon-row{
-  //transform: scale(6);
-  //display: inline-block !important;
-  //vertical-align:middle;
-  //align-self: start;
-  //top:0px;
-  //position: absolute;
-  //top:20px;
-  //margin: 0 auto;
-  height: 65%;
-  margin-bottom: 10px;
+  max-height: 50%;
   text-align:center;
 }
 .btn-icon{
-  font-size: 6rem;
+  font-size: 4rem;
 }
 .logout-icon-row{
   height: 65%;
@@ -42,7 +35,7 @@
 }
 
 .btn-text{
-  font-size: large;
+  font-size: medium;
   font-weight: bolder;
   //display: inline-block;
   margin-bottom: 5px;

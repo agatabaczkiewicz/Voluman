@@ -9,14 +9,14 @@ import {StorageService} from "./services/storage.service";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnDestroy{
-  title = 'voluman-front';
+  title = 'Voluman';
   path=["Główne menu","Dostępność"];
-  constructor(translate: TranslateService,
+  constructor(private translate: TranslateService,
               private jsonFilesService: JsonFilesService,
               private storageService: StorageService){
-    translate.addLangs(['pl', 'klingon']);
-    translate.setDefaultLang('pl');
-    translate.use('pl');
+    this.translate.addLangs(['pl', 'klingon']);
+    this.translate.setDefaultLang('pl');
+    this.translate.use('pl');
     this.jsonFilesService.getDataFromFiles();
   }
 

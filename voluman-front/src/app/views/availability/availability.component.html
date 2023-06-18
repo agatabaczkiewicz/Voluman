@@ -1,6 +1,6 @@
-<app-breadcrumb [path]=path [back]="'menu'"></app-breadcrumb>
 <div class="row w-100">
   <div class="col-sm-4  justify-content-md-center" style="max-width: 27rem;">
+    <app-breadcrumb [path]=path [back]="'menu'"></app-breadcrumb>
     <div class="row">
       <button type="button" class="btn btn-outline-dark menu-btn ms-lg-5" (click)="onClick()">
         <div class="btn-icon-row row">
@@ -11,7 +11,7 @@
       </button>
       <br>
       <div class="row mt-4">
-      <button type="button" class="btn btn-success me-2 ms-lg-5 menu-btn" (click)="onSaveClick()">  <div class="btn-icon-row row">
+      <button type="button" class="btn btn-safe me-2 ms-lg-5 menu-btn" (click)="onSaveClick()">  <div class="btn-icon-row row">
         <i class="bi btn-icon bi-database-fill-down"></i></div>
         <div class="btn-text">
           <span>Zapisz</span>
@@ -35,14 +35,14 @@
             <div class="line">
               <div class="square stripes "></div><div> - Tu jesteś dostępny</div></div>
             <div class="line">
-              <div class="square text-center pb-2 pt-0"><p>---</p></div><div> - Tu nie ma Twoich akcji</div></div>
+              <div class="square text-center pb-2 pt-0"><p>---</p></div><div> {{'welcomeMessage'|translate}}</div></div>
 
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="col">
+  <div class="col  mt-3 ms-lg-5 justify-content-end">
 <app-calendar #calendar [needs]="days" [isSchedule]=false></app-calendar>
   </div>
 </div>

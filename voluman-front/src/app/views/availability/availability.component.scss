@@ -36,3 +36,14 @@
 .bb{
   width: 35%;
 }
+
+.btn-safe{
+  color: #fff;
+  background-color: #146c43;
+  border-color: #198754; /*set the color you want here*/
+}
+.btn-safe:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754; /*set the color you want here*/
+}

@@ -11,7 +11,7 @@ export class CalendarDayComponent {
 
   @ViewChild('calendarDayModal') calendarDayModal: ElementRef | undefined;
   @Output()saveSignal=new EventEmitter<any>();
-  date:String="";
+  date:string="";
   times:string[]=[];
   need: SlotClass[]=[];
   schedule: SlotClass[]=[];
@@ -34,7 +34,7 @@ export class CalendarDayComponent {
   onUnDoClick(){
     this.modalService.dismissAll();
   }
-  openModal(date: String, need: SlotClass[], schedule: SlotClass[], times:string[], load:number, maxLoad:number){
+  openModal(date: string, need: SlotClass[], schedule: SlotClass[], times:string[], load:number, maxLoad:number){
     this.schedule = schedule;
     this.need= need;
     this.date=date;

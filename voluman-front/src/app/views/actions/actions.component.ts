@@ -19,7 +19,9 @@ export class ActionsComponent implements OnInit, OnDestroy {
               private router: Router,
               private toastService: ToastService) {
 
-    this.guest = this.storageService.getData("guest");
+    if(this.storageService.getData("guest") != null) {
+      this.guest = this.storageService.getData("guest");
+    }
     let actions = this.storageService.getData("actions")
     if (actions != null) {
       if(this.guest  == "true"){

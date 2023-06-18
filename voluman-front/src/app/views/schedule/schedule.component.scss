@@ -14,15 +14,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: green;
+  color: #fff;
 }
 .btn-accept{
   max-width: 18rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
+  background-color: #146c43;
+  border-color: #198754; /*set the color you want here*/
 
+}
 
+.btn-accept:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754; /*set the color you want here*/
 }
 
 .line{
