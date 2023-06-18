@@ -16,8 +16,9 @@ export class GuestMenuComponent {
   }
 
   onClick(){
-    this.storageService.saveData("userLogged","false")
+    this.storageService.saveData("guest","false")
     this.router.navigate(['login']);
+    window.location.reload();
   }
   onActionsClick(){
     this.router.navigate(['action'])

@@ -21,6 +21,7 @@ export class MenuComponent implements OnInit {
   onClick(){
     this.storageService.saveData("userLogged","false")
     this.router.navigate(['login']);
+    window.location.reload();
   }
   onAvailabilityClick(){
 
