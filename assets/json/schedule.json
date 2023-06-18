@@ -1,25 +1,25 @@
 {
-    "maxLoad": 5,
-    "load": 4,
+    "maxLoad": 16,
+    "load": 14,
     "schedule": [
         {
-            "date": "22-05-2023",
+            "date": "22-05",
           "slots": [
             {
-              "startTime": "08:00:00",
-              "endTime": "9:00:00",
+              "startTime": "08:00",
+              "endTime": "9:00",
               "isShift": false,
               "actions": []
             },
             {
-              "startTime": "9:00:00",
-              "endTime": "10:00:00",
+              "startTime": "9:00",
+              "endTime": "10:00",
               "isShift": false,
               "actions": []
             },
             {
-              "startTime": "10:00:00",
-              "endTime": "11:00:00",
+              "startTime": "10:00",
+              "endTime": "11:00",
               "isShift": true,
               "actions": [
                 {
@@ -37,8 +37,8 @@
               ]
             },
             {
-              "startTime": "11:00:00",
-              "endTime": "12:00:00",
+              "startTime": "11:00",
+              "endTime": "12:00",
               "isShift": true,
               "actions": [
                 {
@@ -50,8 +50,8 @@
               ]
             },
             {
-              "startTime": "12:00:00",
-              "endTime": "13:00:00",
+              "startTime": "12:00",
+              "endTime": "13:00",
               "isShift": true,
               "actions": [
                 {
@@ -69,48 +69,77 @@
               ]
             },
             {
-              "startTime": "13:00:00",
-              "endTime": "14:00:00",
-              "isShift": false,
-              "actions": []
+              "startTime": "13:00",
+              "endTime": "14:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             },
             {
-              "startTime": "14:00:00",
-              "endTime": "15:00:00",
-              "isShift": false,
-              "actions": []
+              "startTime": "14:00",
+              "endTime": "15:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             },
             {
-              "startTime": "15:00:00",
-              "endTime": "16:00:00",
-              "actions": []
+              "startTime": "15:00",
+              "endTime": "16:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             },
             {
-              "startTime": "16:00:00",
-              "endTime": "17:00:00",
-              "isShift": false,
-              "actions": []
+              "startTime": "16:00",
+              "endTime": "17:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             }
           ]
         },
         {
-            "date": "23-05-2023",
+            "date": "23-05",
           "slots": [
             {
-              "startTime": "08:00:00",
-              "endTime": "9:00:00",
+              "startTime": "08:00",
+              "endTime": "9:00",
               "isShift": false,
               "actions": []
             },
             {
-              "startTime": "9:00:00",
-              "endTime": "10:00:00",
+              "startTime": "9:00",
+              "endTime": "10:00",
               "isShift": false,
               "actions": []
             },
             {
-              "startTime": "10:00:00",
-              "endTime": "11:00:00",
+              "startTime": "10:00",
+              "endTime": "11:00",
               "isShift": true,
               "actions": [
                 {
@@ -128,8 +157,8 @@
               ]
             },
             {
-              "startTime": "11:00:00",
-              "endTime": "12:00:00",
+              "startTime": "11:00",
+              "endTime": "12:00",
               "isShift": true,
               "actions": [
                 {
@@ -141,8 +170,8 @@
               ]
             },
             {
-              "startTime": "12:00:00",
-              "endTime": "13:00:00",
+              "startTime": "12:00",
+              "endTime": "13:00",
               "isShift": true,
               "actions": [
                 {
@@ -160,48 +189,77 @@
               ]
             },
             {
-              "startTime": "13:00:00",
-              "endTime": "14:00:00",
-              "isShift": false,
-              "actions": []
+              "startTime": "13:00",
+              "endTime": "14:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             },
             {
-              "startTime": "14:00:00",
-              "endTime": "15:00:00",
-              "isShift": false,
-              "actions": []
+              "startTime": "14:00",
+              "endTime": "15:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             },
             {
-              "startTime": "15:00:00",
-              "endTime": "16:00:00",
-              "actions": []
+              "startTime": "15:00",
+              "endTime": "16:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             },
             {
-              "startTime": "16:00:00",
-              "endTime": "17:00:00",
-              "isShift": false,
-              "actions": []
+              "startTime": "16:00",
+              "endTime": "17:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             }
           ]
         },
         {
-            "date": "24-05-2023",
+            "date": "24-05",
           "slots": [
             {
-              "startTime": "08:00:00",
-              "endTime": "9:00:00",
+              "startTime": "08:00",
+              "endTime": "9:00",
               "isShift": false,
               "actions": []
             },
             {
-              "startTime": "9:00:00",
-              "endTime": "10:00:00",
+              "startTime": "9:00",
+              "endTime": "10:00",
               "isShift": false,
               "actions": []
             },
             {
-              "startTime": "10:00:00",
-              "endTime": "11:00:00",
+              "startTime": "10:00",
+              "endTime": "11:00",
               "isShift": true,
               "actions": [
                 {
@@ -213,8 +271,8 @@
               ]
             },
             {
-              "startTime": "11:00:00",
-              "endTime": "12:00:00",
+              "startTime": "11:00",
+              "endTime": "12:00",
               "isShift": true,
               "actions": [
                 {
@@ -226,8 +284,8 @@
               ]
             },
             {
-              "startTime": "12:00:00",
-              "endTime": "13:00:00",
+              "startTime": "12:00",
+              "endTime": "13:00",
               "isShift": true,
               "actions": [
                 {
@@ -239,48 +297,77 @@
               ]
             },
             {
-              "startTime": "13:00:00",
-              "endTime": "14:00:00",
-              "isShift": false,
-              "actions": []
+              "startTime": "13:00",
+              "endTime": "14:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             },
             {
-              "startTime": "14:00:00",
-              "endTime": "15:00:00",
-              "isShift": false,
-              "actions": []
+              "startTime": "14:00",
+              "endTime": "15:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             },
             {
-              "startTime": "15:00:00",
-              "endTime": "16:00:00",
-              "actions": []
+              "startTime": "15:00",
+              "endTime": "16:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             },
             {
-              "startTime": "16:00:00",
-              "endTime": "17:00:00",
-              "isShift": false,
-              "actions": []
+              "startTime": "16:00",
+              "endTime": "17:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             }
           ]
         },
         {
-            "date": "25-05-2023",
+            "date": "25-05",
           "slots": [
             {
-              "startTime": "08:00:00",
-              "endTime": "9:00:00",
+              "startTime": "08:00",
+              "endTime": "9:00",
               "isShift": false,
               "actions": []
             },
             {
-              "startTime": "9:00:00",
-              "endTime": "10:00:00",
+              "startTime": "9:00",
+              "endTime": "10:00",
               "isShift": false,
               "actions": []
             },
             {
-              "startTime": "10:00:00",
-              "endTime": "11:00:00",
+              "startTime": "10:00",
+              "endTime": "11:00",
               "isShift": true,
               "actions": [
                 {
@@ -292,8 +379,8 @@
               ]
             },
             {
-              "startTime": "11:00:00",
-              "endTime": "12:00:00",
+              "startTime": "11:00",
+              "endTime": "12:00",
               "isShift": true,
               "actions": [
                 {
@@ -305,8 +392,8 @@
               ]
             },
             {
-              "startTime": "12:00:00",
-              "endTime": "13:00:00",
+              "startTime": "12:00",
+              "endTime": "13:00",
               "isShift": true,
               "actions": [
                 {
@@ -318,48 +405,77 @@
               ]
             },
             {
-              "startTime": "13:00:00",
-              "endTime": "14:00:00",
-              "isShift": false,
-              "actions": []
+              "startTime": "13:00",
+              "endTime": "14:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             },
             {
-              "startTime": "14:00:00",
-              "endTime": "15:00:00",
-              "isShift": false,
-              "actions": []
+              "startTime": "14:00",
+              "endTime": "15:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             },
             {
-              "startTime": "15:00:00",
-              "endTime": "16:00:00",
-              "actions": []
+              "startTime": "15:00",
+              "endTime": "16:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             },
             {
-              "startTime": "16:00:00",
-              "endTime": "17:00:00",
-              "isShift": false,
-              "actions": []
+              "startTime": "16:00",
+              "endTime": "17:00",
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             }
           ]
         },
         {
-            "date": "26-05-2023",
+            "date": "26-05",
           "slots": [
             {
-              "startTime": "08:00:00",
-              "endTime": "9:00:00",
+              "startTime": "08:00",
+              "endTime": "9:00",
               "isShift": false,
               "actions": []
             },
             {
-              "startTime": "9:00:00",
-              "endTime": "10:00:00",
+              "startTime": "9:00",
+              "endTime": "10:00",
               "isShift": false,
               "actions": []
             },
             {
-              "startTime": "10:00:00",
-              "endTime": "11:00:00",
+              "startTime": "10:00",
+              "endTime": "11:00",
               "isShift": true,
               "actions": [
                 {
@@ -371,8 +487,8 @@
               ]
             },
             {
-              "startTime": "11:00:00",
-              "endTime": "12:00:00",
+              "startTime": "11:00",
+              "endTime": "12:00",
               "isShift": true,
               "actions": [
                 {
@@ -384,8 +500,8 @@
               ]
             },
             {
-              "startTime": "12:00:00",
-              "endTime": "13:00:00",
+              "startTime": "12:00",
+              "endTime": "13:00",
               "isShift": true,
               "actions": [
                 {
@@ -397,48 +513,48 @@
               ]
             },
             {
-              "startTime": "13:00:00",
-              "endTime": "14:00:00",
+              "startTime": "13:00",
+              "endTime": "14:00",
               "isShift": false,
               "actions": []
             },
             {
-              "startTime": "14:00:00",
-              "endTime": "15:00:00",
+              "startTime": "14:00",
+              "endTime": "15:00",
               "isShift": false,
               "actions": []
             },
             {
-              "startTime": "15:00:00",
-              "endTime": "16:00:00",
+              "startTime": "15:00",
+              "endTime": "16:00",
               "actions": []
             },
             {
-              "startTime": "16:00:00",
-              "endTime": "17:00:00",
+              "startTime": "16:00",
+              "endTime": "17:00",
               "isShift": false,
               "actions": []
             }
           ]
         },
         {
-            "date": "27-05-2023",
+            "date": "27-05",
             "slots": [
                 {
-                    "startTime": "08:00:00",
-                    "endTime": "9:00:00",
+                    "startTime": "08:00",
+                    "endTime": "9:00",
                     "isShift": false,
                     "actions": []
                 },
                 {
-                    "startTime": "9:00:00",
-                    "endTime": "10:00:00",
+                    "startTime": "9:00",
+                    "endTime": "10:00",
                     "isShift": false,
                     "actions": []
                 },
                 {
-                    "startTime": "10:00:00",
-                    "endTime": "11:00:00",
+                    "startTime": "10:00",
+                    "endTime": "11:00",
                     "isShift": true,
                   "actions": [
                     {
@@ -450,8 +566,8 @@
                   ]
                 },
                 {
-                    "startTime": "11:00:00",
-                    "endTime": "12:00:00",
+                    "startTime": "11:00",
+                    "endTime": "12:00",
                     "isShift": true,
                   "actions": [
                     {
@@ -463,8 +579,8 @@
                   ]
                 },
                 {
-                    "startTime": "12:00:00",
-                    "endTime": "13:00:00",
+                    "startTime": "12:00",
+                    "endTime": "13:00",
                     "isShift": true,
                   "actions": [
                     {
@@ -476,48 +592,55 @@
                   ]
                 },
                 {
-                    "startTime": "13:00:00",
-                    "endTime": "14:00:00",
+                    "startTime": "13:00",
+                    "endTime": "14:00",
                     "isShift": false,
                     "actions": []
                 },
                 {
-                    "startTime": "14:00:00",
-                    "endTime": "15:00:00",
-                    "isShift": false,
+                    "startTime": "14:00",
+                    "endTime": "15:00",
+                  "isShift": true,
+                  "actions": [
+                    {
+                      "action": "Pacz",
+                      "need": 5,
+                      "scheduled": 5,
+                      "your": false
+                    }
+                  ]
+                },
+                {
+                    "startTime": "15:00",
+                    "endTime": "16:00",
                     "actions": []
                 },
                 {
-                    "startTime": "15:00:00",
-                    "endTime": "16:00:00",
-                    "actions": []
-                },
-                {
-                    "startTime": "16:00:00",
-                    "endTime": "17:00:00",
+                    "startTime": "16:00",
+                    "endTime": "17:00",
                     "isShift": false,
                     "actions": []
                 }
             ]
         },
       {
-        "date": "28-05-2023",
+        "date": "28-05",
         "slots": [
           {
-            "startTime": "08:00:00",
-            "endTime": "9:00:00",
+            "startTime": "08:00",
+            "endTime": "9:00",
             "isShift": false,
             "actions": []
           },
           {
-            "startTime": "9:00:00",
-            "endTime": "10:00:00",
+            "startTime": "9:00",
+            "endTime": "10:00",
             "isShift": false,
             "actions": []
           },
           {
-            "startTime": "10:00:00",
-            "endTime": "11:00:00",
+            "startTime": "10:00",
+            "endTime": "11:00",
             "isShift": true,
             "actions": [
               {
@@ -529,8 +652,8 @@
             ]
           },
           {
-            "startTime": "11:00:00",
-            "endTime": "12:00:00",
+            "startTime": "11:00",
+            "endTime": "12:00",
             "isShift": true,
             "actions": [
               {
@@ -542,8 +665,8 @@
             ]
           },
           {
-            "startTime": "12:00:00",
-            "endTime": "13:00:00",
+            "startTime": "12:00",
+            "endTime": "13:00",
             "isShift": true,
             "actions": [
               {
@@ -555,25 +678,32 @@
             ]
           },
           {
-            "startTime": "13:00:00",
-            "endTime": "14:00:00",
+            "startTime": "13:00",
+            "endTime": "14:00",
+            "isShift": true,
+            "actions": [
+              {
+                "action": "Pacz",
+                "need": 5,
+                "scheduled": 5,
+                "your": false
+              }
+            ]
+          },
+          {
+            "startTime": "14:00",
+            "endTime": "15:00",
             "isShift": false,
             "actions": []
           },
           {
-            "startTime": "14:00:00",
-            "endTime": "15:00:00",
-            "isShift": false,
+            "startTime": "15:00",
+            "endTime": "16:00",
             "actions": []
           },
           {
-            "startTime": "15:00:00",
-            "endTime": "16:00:00",
-            "actions": []
-          },
-          {
-            "startTime": "16:00:00",
-            "endTime": "17:00:00",
+            "startTime": "16:00",
+            "endTime": "17:00",
             "isShift": false,
             "actions": []
           }
