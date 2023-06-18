@@ -7,9 +7,9 @@
         <div class="card-body ">
           <form id="loginForm">
             <div class="form mb-3 ">
-              <label  class="col-form-label">Adres email</label>
+              <label  class="col-form-label">{{'email'|translate}}</label>
               <input type="text" [formControl]="login" class="form-control" name="login" >
-              <label  class="col-form-label">Hasło</label>
+              <label  class="col-form-label">{{'password'|translate}}</label>
               <input type="password" [formControl]="password"  name="password" class="form-control" >
             </div>
             <button class="btn btn-outline-dark" type="button" (click)="onLogIn()">Zaloguj się</button>

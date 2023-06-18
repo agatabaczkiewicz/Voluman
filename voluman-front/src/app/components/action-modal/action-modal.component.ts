@@ -10,7 +10,7 @@ import {ActionDescClass, SlotClass} from "../../models/models";
 export class ActionModalComponent {
 
   @ViewChild('actionModal') actionModal: ElementRef | undefined;
-  @Input('guest') guest = "false";
+  @Input('guest') guest: string | null = "false";
   action: ActionDescClass={};
   @Output() reactionEmit = new EventEmitter<ActionDescClass>();
   style = 'blue';

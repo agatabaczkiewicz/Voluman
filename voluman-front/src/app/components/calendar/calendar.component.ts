@@ -16,7 +16,7 @@ import {CellAvailabilityComponent} from "../cell/cell-availability/cell-availabi
 })
 export class CalendarComponent implements OnInit {
 
-  days = ["PN","WT","ŚR","CZ","PT","SB","ND"];
+  daysName = ['mn','tu','wed','th','fr','st','sn'];
   wasClick:boolean=false;
   @Input('needs')needs:NeedClass[]=[];
   @Input('schedule')schedule:ScheduleClass={maxLoad:0,
@@ -28,6 +28,7 @@ export class CalendarComponent implements OnInit {
   load=0;
   maxLoad=0;
   idClick="";
+  days:string[]=[];
   @ViewChild('dayModal') dayModal: any;
   @ViewChildren('cells') cells: QueryList<CellAvailabilityComponent> | undefined;
 
@@ -96,8 +97,8 @@ export class CalendarComponent implements OnInit {
     }
   }
 
-  onOpenDayClick(day:NeedClass, schedule: NeedClass){
-  this.dayModal.openModal(day.date, day.slots, schedule.slots, this.times, this.schedule.load,this.schedule.maxLoad);
+  onOpenDayClick(day:NeedClass, schedule: NeedClass, dayName:string, date:string){
+  this.dayModal.openModal(dayName, date, day.slots, schedule.slots, this.times, this.schedule.load,this.schedule.maxLoad);
   }
   onLoadChange(event:number){
     this.load = this.load + event;

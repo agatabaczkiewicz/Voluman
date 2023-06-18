@@ -6,7 +6,7 @@
         <div class="btn-icon-row row">
           <i class="bi bi-unindent btn-icon"></i></div>
         <div class="btn-text">
-          <span>Wróć do Menu</span>
+          <span>{{'back.menu' | translate}}</span>
         </div>
       </button>
       <br>
@@ -14,12 +14,12 @@
         <button type="button" class="btn btn-success me-2 ms-lg-5 menu-btn" (click)="onSaveClick()">  <div class="btn-icon-row row">
           <i class="bi btn-icon bi-database-fill-down"></i></div>
           <div class="btn-text">
-            <span>Zapisz</span>
+            <span>{{'save'|translate}}</span>
           </div>
         </button>
         <button type="button" class="btn  btn-outline-dark menu-btn" (click)="onDismissClick()">
           <i class="bi btn-icon bi-eraser"></i><div class="btn-text">
-          <span>Anuluj zmiany</span>
+          <span>{{'cancel' | translate}}</span>
         </div>
         </button>
       </div>
@@ -33,37 +33,37 @@
         <thead >
         <tr>
           <th scope="col"></th>
-          <th scope="col-6">Daty</th>
-          <th scope="col-sm-2">Ile godz?</th>
+          <th scope="col-6">{{'dates'|translate}}</th>
+          <th scope="col-sm-2">{{'hours.howmany'|translate}}</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td>Bieżący tydzień</td>
+          <td>{{'this.week'|translate}}</td>
           <td>{{ date1}}</td>
           <td><input type="number" [formControl]="maxNow" name="maxNow" class="form-control">
           </td>
         </tr>
         <tr>
-          <td>Następny tydzień</td>
+          <td>{{'next.week'|translate}}</td>
           <td>{{date2}}</td>
           <td><input type="number" [formControl]="max1" name="max1"  class="form-control">
           </td>
         </tr>
         <tr>
-          <td>2. kolejny tydzień</td>
+          <td>2. {{'second.week'|translate}}</td>
           <td>{{date3}}</td>
           <td><input type="number" [formControl]="max2" name="max2" class="form-control">
           </td>
         </tr>
         <tr>
-          <td>3. koljeny tydzień</td>
+          <td>3. {{'second.week'|translate}}</td>
           <td>{{date4}}</td>
           <td><input type="number" [formControl]="max3" name="max3" class="form-control">
           </td>
         </tr>
         <tr>
-          <td>4. kolejny tydzień</td>
+          <td>4. {{'second.week'|translate}}</td>
           <td>{{date5}}</td>
           <td><input type="number" [formControl]="max4" name="max4" class="form-control">
           </td>

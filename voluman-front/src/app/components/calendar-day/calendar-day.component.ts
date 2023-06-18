@@ -17,7 +17,9 @@ export class CalendarDayComponent {
   schedule: SlotClass[]=[];
   actionCount = 1;
   load=0 ;
+  actionName="";
   maxLoad=0;
+  dateName:string="";
   constructor(private modalService: NgbModal) {
 
 
@@ -34,13 +36,19 @@ export class CalendarDayComponent {
   onUnDoClick(){
     this.modalService.dismissAll();
   }
-  openModal(date: string, need: SlotClass[], schedule: SlotClass[], times:string[], load:number, maxLoad:number){
+  openModal(dateNAme:string,date: string, need: SlotClass[], schedule: SlotClass[], times:string[], load:number, maxLoad:number){
     this.schedule = schedule;
     this.need= need;
+    this.dateName=dateNAme
     this.date=date;
     this.times=times;
     this.load=load;
     this.maxLoad=maxLoad;
+    let indexAction = this.schedule.findIndex(x=> x.actions?.length!=0);
+    if(indexAction!=-1) {
+      // @ts-ignore
+      this.actionName = this.schedule[indexAction].actions[0].action;
+    }
     const modalRef = this.modalService.open(this.calendarDayModal, { size: 'lg', backdrop: 'static'});
   }
 }

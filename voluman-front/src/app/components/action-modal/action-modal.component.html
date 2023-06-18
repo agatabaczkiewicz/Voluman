@@ -15,21 +15,21 @@
                     <div class="btn-icon-row row">
                       <i class="bi bi-emoji-smile btn-icon" ></i></div>
                     <div class="btn-text">
-                      Tak
+                      {{'yes'|translate}}
                     </div>
                   </button>
         <button *ngIf = "guest!='true'" type="button" class="btn btn-outline-dark menu-btn" (click)="onNeutralCLick()"  [disabled]="action.reaction == ':|'" >
           <div class="btn-icon-row row">
             <i class="bi bi-emoji-neutral btn-icon" ></i></div>
           <div class="btn-text">
-            Raczej Tak
+            {{'meh'|translate}}
           </div>
         </button>
         <button *ngIf = "guest!='true'"  type="button" class="btn btn-outline-dark menu-btn"  (click)="onRejectCLick()"  [disabled]="action.reaction == ':('">
           <div class="btn-icon-row row">
             <i class="bi bi-emoji-frown btn-icon" ></i></div>
           <div class="btn-text">
-            Nie
+            {{'no'|translate}}
           </div>
         </button>
 

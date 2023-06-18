@@ -52,22 +52,10 @@ export class ActionsComponent implements OnInit, OnDestroy {
 
   }
 
-  yesClick($event:ActionDescClass) {
-    this.yours.push($event);
-    this.toastService.show('Akcja została dodana do Twoich akcji',{ classname: 'bg-success text-light'});
-  }
-
-  mehClick($event:ActionDescClass) {
-    let index = this.toSee.findIndex(x=> x.name == $event.name);
-    this.toSee.splice(index, 1);
-    this.yours.push($event);
-    this.toastService.show('Akcja została dodana do Twoich akcji jako mniej ważna',{ classname: 'bg-success text-light'});
-
-  }
 
   deleteFromList(action: ActionDescClass){
     let index = this.toSee.findIndex(x=> x.name == action.name);
-    if (action.reaction == ":)" || action.reaction == ":|"){;
+    if (action.reaction == ":)" || action.reaction == ":|"){
       this.toastService.show('Akcja została dodana do Twoich akcji',{ classname: 'bg-success text-light'});
       if(index == -1){
         index = this.rejected.findIndex(x=> x.name == action.name);
@@ -98,6 +86,8 @@ export class ActionsComponent implements OnInit, OnDestroy {
     if(this.guest=="true"){
       this.router.navigate(['guest-menu']);
     }else {
+      let plus = this.toSee.concat(this.rejected).concat(this.yours);
+      this.storageService.saveData("actions", JSON.stringify({"actions": plus}));
       this.router.navigate(['menu']);
     }
   }

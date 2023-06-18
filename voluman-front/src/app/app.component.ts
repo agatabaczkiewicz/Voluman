@@ -14,7 +14,7 @@ export class AppComponent implements OnDestroy{
   constructor(private translate: TranslateService,
               private jsonFilesService: JsonFilesService,
               private storageService: StorageService){
-    this.translate.addLangs(['pl', 'klingon']);
+
     this.translate.setDefaultLang('pl');
     this.translate.use('pl');
     this.jsonFilesService.getDataFromFiles();

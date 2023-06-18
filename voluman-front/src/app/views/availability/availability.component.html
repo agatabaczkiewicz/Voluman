@@ -1,12 +1,12 @@
 <div class="row w-100">
-  <div class="col-sm-4  justify-content-md-center" style="max-width: 27rem;">
+  <div class="col-sm-3  justify-content-md-center" style="max-width: 27rem;">
     <app-breadcrumb [path]=path [back]="'menu'"></app-breadcrumb>
     <div class="row">
       <button type="button" class="btn btn-outline-dark menu-btn ms-lg-5" (click)="onClick()">
         <div class="btn-icon-row row">
           <i class="bi bi-unindent btn-icon"></i></div>
         <div class="btn-text">
-          <span>Wróć do Menu</span>
+          <span>{{'back.menu' | translate}}</span>
         </div>
       </button>
       <br>
@@ -14,28 +14,28 @@
       <button type="button" class="btn btn-safe me-2 ms-lg-5 menu-btn" (click)="onSaveClick()">  <div class="btn-icon-row row">
         <i class="bi btn-icon bi-database-fill-down"></i></div>
         <div class="btn-text">
-          <span>Zapisz</span>
+          <span>{{'save' | translate}}</span>
         </div>
       </button>
       <button type="button" class="btn  btn-outline-dark menu-btn" (click)="onUnDoClick()">
         <i class="bi btn-icon bi-eraser"></i><div class="btn-text">
-          <span>Anuluj zmiany</span>
+          <span>{{'cancel' | translate}}</span>
       </div>
       </button>
     </div></div>
     <div class="row mt-lg-5  bottom-0 start-0 mb-5  ">
       <div class="card ms-lg-5 " style="max-width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">Legenda</h5>
+          <h5 class="card-title">{{'legend'|translate}}</h5>
           <div class="card-text">
-            <b>Klik</b> - Zmiana stanu slotu<br>
-            <b>Shift + Klik</b> - Dodanie koljenych slotów.<br>
+            <b>Klik</b> {{'change.shift'|translate}}<br>
+            <b>Shift + Klik</b> {{'shift.add'|translate}}<br>
             <div class="line">
-              <div class="square"></div><div> - Tu są Twoje akcje</div></div>
+              <div class="square"></div><div> - {{'your.action.here'|translate}}</div></div>
             <div class="line">
-              <div class="square stripes "></div><div> - Tu jesteś dostępny</div></div>
+              <div class="square stripes "></div><div> - {{'you.available'|translate}}</div></div>
             <div class="line">
-              <div class="square text-center pb-2 pt-0"><p>---</p></div><div> {{'welcomeMessage'|translate}}</div></div>
+              <div class="square text-center pb-2 pt-0"><p>---</p></div><div> {{'no.your.action'|translate}}</div></div>
 
           </div>
         </div>

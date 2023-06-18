@@ -6,17 +6,17 @@
         <div class="btn-icon-row row">
           <i class="bi bi-unindent btn-icon"></i></div>
         <div class="btn-text">
-          <span>Wróć do Menu</span>
+          <span>{{'back.menu' | translate}}</span>
         </div>
       </button>
       <div class="card border-primary ms-4 " style="max-width: 11rem;">
         <div class="card-body">
-          <h5 class="card-title">Obciążenie tygodniowe [godz]</h5>
+          <h5 class="card-title">{{'load' | translate}}</h5>
           <div class="card-text">
             <hr>
             MAX: {{schedule.maxLoad}}<br>
             <hr>
-            <p [style.font-weight]="schedule.maxLoad < schedule.load ? 'bold':'normal'">Plan: {{schedule.load}}
+            <p [style.font-weight]="schedule.maxLoad < schedule.load ? 'bold':'normal'">{{'plan'| translate}}: {{schedule.load}}
           </div>
         </div>
       </div>
@@ -24,23 +24,22 @@
 
     </div>
     <div class="row " *ngIf="schedule.accepted==undefined">
-      <button type="button" class="btn btn-accept mt-2  me-2 ms-lg-5" (click)="onAccept()"><i class="bi bi-check-lg i-accept"></i> Akceptuj plan tygodnia</button>
+      <button type="button" class="btn btn-accept mt-2  me-2 ms-lg-5" (click)="onAccept()"><i class="bi bi-check-lg i-accept"></i> {{'accept.plan.week'|translate}}</button>
   </div>
 
 
-  <div class="row mt-lg-5  bottom-0 start-0 mb-5  ">
-    <div class="card ms-lg-5 " style="max-width: 23rem;">
+  <div class="row mt-lg-5  bottom-0 start-0 mb-5  ">    <div class="card ms-lg-5 " style="max-width: 23rem;">
       <div class="card-body">
-        <h5 class="card-title">Legenda</h5>
+        <h5 class="card-title">{{'legend'|translate}}</h5>
         <div class="card-text">
           <div class="line">
-            <div class="square text-center pb-2 pt-0"><p>---</p></div><div> - Tu nie ma Twoich akcji</div></div>
+            <div class="square text-center pb-2 pt-0"><p>---</p></div><div> - {{'no.your.action'|translate}}</div></div>
           <div class="line">
-            <div class="square" style="background-color:#FFFACD;"></div><div> - Tu są Twoje akcje i niebrakuje ludzi</div></div>
+            <div class="square" style="background-color:#FFFACD;"></div><div> - {{'your.no.missing'|translate}}</div></div>
           <div class="line">
-            <div class="square" style="background-color: pink;"></div><div> - Tu są Twoje akcje i brakuje ludzi</div></div>
+            <div class="square" style="background-color: pink;"></div><div> - {{'your.missing'|translate}}</div></div>
           <div class="line">
-            <div class="square " style="background-color: #B9D9EB;"></div><div> - Tu jesteś dostępny</div></div>
+            <div class="square " style="background-color: #B9D9EB;"></div><div> - {{'your.action.here'|translate}}</div></div>
 
 
         </div>
