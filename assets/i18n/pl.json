@@ -37,7 +37,7 @@
   "actions.delete": "Akcja została usunięta z Twoich akcji",
   "change.shift": "Zmiana stanu slotu",
   "shift.add": "Dodanie kolejnych slotów",
-  "shofts.save": "Terminy Zostały zapisane",
+  "shofts.save": "Terminy zostały zapisane",
   "availability": "Dostępność",
   "dates.term": "Terminy",
   "give.data": "Podaj swoje dane",
@@ -60,7 +60,7 @@
   "hours.howmany": "Ile godzin?",
   "this.week": "Bieżący tydzień",
   "next.week": "Następny tydzień",
-  "second-week": "kolejny tydzień",
+  "second.week": "kolejny tydzień",
   "weekplan": "Plan tygodnia",
   "plan": "Plan",
   "weekplan.accept": "Plan tygodnia został zaakceptowany",
@@ -68,6 +68,14 @@
   "your.data": "Twoje dane",
   "Ua.pack": "Paczki dla UA",
   "mtp.info": "MTP.Informacja",
+  "mtp.barek": "MTP.Barek",
   "accept.plan.week": "Akceptuj plan tygodnia",
-  "change.shift":"Zmień dyżury w dniu"
+  "change.shift":"Zmień dyżury w dniu",
+  "as.guest": "Wejdź jako gość",
+  "log.btn": "Zaloguj się",
+  "change":"Zmień",
+  "clik": "klik",
+  "ua.pack.dsc": "Zadaniem wolontariuszy będzie pomoc przy przyjmowaniu i wydawaniu paczek dla uchodźców z Ukrainy oraz porządkowanie magazynu (sprzątanie, przenoszenie paczek, oklejanie kartów itp.).Generalnie pracujemy od poniedziałku do soboty w godzinach od 9:00 do 20:00.",
+  "mtp.bar.dsc": "Barek jest czynny przez cały czas. Za darmo podajemy herbatę lub kawę, kanapki, słodycze i inne przekąski. Od 12:00 do 14:00 są wydawane obiady przywożone z zewnątrz (zupa, pieczywo, drugie danie i kompot). Praca polega na wydawaniu posiłków i utrzymaniu w czystości części restauracyjnej oraz pomieszczeń barku. Znajomość języka ukraińskiego lub rosyjskiego będzie bardzo pomocna ale nie jest wymagana."
+
 }
