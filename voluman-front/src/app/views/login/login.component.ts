@@ -31,11 +31,19 @@ export class LoginComponent implements OnInit {
   onLogIn(){
     let inputLogin = this.login.value;
     let passInput = this.password.value;
+    if(this.users==undefined){
+      let fromStorage = this.storageService.getData("user");
+      if(fromStorage != null) {
+        this.users = JSON.parse(fromStorage).users;
+      }
+    }
     // @ts-ignore
     let res = this.users.find(x=>x.email==inputLogin);
     // @ts-ignore
     if (res != null && res.password == passInput){
-        this.storageService.saveData("user","true");
+
+        this.storageService.notify({isRefresh : true});
+
         this.router.navigate(['menu']);
     }
     else{

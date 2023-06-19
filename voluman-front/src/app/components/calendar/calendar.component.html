@@ -22,7 +22,7 @@
             <div style="text-align: center"><b>{{daysName[i]|translate}} {{days[i]}}</b></div>
           </div>
           <div class="row " *ngIf="isSchedule" style="text-align: center">
-            <button *ngIf="schedule.accepted==undefined" type="button" class="btn btn-sm btn-outline-dark btn-row" (click)="onOpenDayClick(needs[i+week], schedule.schedule[i+week], daysName[i],days[i])">Otwórz</button>
+            <button *ngIf="schedule.accepted==undefined" type="button" class="btn btn-sm btn-outline-dark btn-row" (click)="onOpenDayClick(needs[i+week], schedule.schedule[i+week], daysName[i],days[i])">{{'change' | translate}}</button>
           </div>
           <div class="row td-custom" style="text-align: center" *ngFor="let shift of needs[i+week].slots; index as j">
                 <app-availability-cell #cells  id = "{{i}}-{{j}}" *ngIf="!this.isSchedule" class="td-custom border align-items-stretch " (wasClickEmit)="wasClickEvent($event)" [wasClick]=wasClick

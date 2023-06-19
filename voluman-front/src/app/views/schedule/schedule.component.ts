@@ -33,7 +33,7 @@ export class ScheduleComponent implements OnInit {
       }
     }
   }
-  path=["Główne Menu", "Plan tygodnia"];
+  path=["main.menu", "weekplan"];
   schedule:ScheduleClass={
     maxLoad:0,
     load:0,
@@ -50,7 +50,7 @@ export class ScheduleComponent implements OnInit {
     this.storageService.saveData("schedule",JSON.stringify(this.schedule));
 
 
-    this.toastService.show('Plan tygodnia został zaakceptowany', {
+    this.toastService.show('weekplan.accept', {
       classname: 'bg-success text-light'
     });
 

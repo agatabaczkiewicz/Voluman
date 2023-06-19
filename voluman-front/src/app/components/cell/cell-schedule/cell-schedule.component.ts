@@ -60,8 +60,10 @@ export class CellScheduleComponent implements OnInit{
       // @ts-ignore
       this.scheduleSlot.actions[this.actionNumber].your = true;
       this.loadEmit.emit(1);
-      // @ts-ignore
-      this.content = this.scheduleSlot.actions[this.actionNumber].action;
+      if(!this.day) {
+        // @ts-ignore
+        this.content = this.scheduleSlot.actions[this.actionNumber].action;
+      }
       // @ts-ignore
       this.scheduleSlot.actions[this.actionNumber].scheduled = this.scheduleSlot.actions[this.actionNumber].scheduled + 1;
     }
@@ -90,7 +92,9 @@ export class CellScheduleComponent implements OnInit{
         }
         if (action.your) {
           isMine = true;
-          this.content = action.action;
+          if(!this.day) {
+            this.content = action.action;
+          }
         }
       }
       if (isMissingPeople) {

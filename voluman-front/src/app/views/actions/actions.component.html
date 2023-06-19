@@ -1,6 +1,6 @@
 <app-breadcrumb [path]=path [back]="'menu'"></app-breadcrumb>
 <div class="row ">
-  <button type="button" class="btn btn-outline-dark menu-btn ms-lg-5" (click)="onClick()">
+  <button type="button" class="btn btn-outline-dark menu-btn ms-lg-5 break-all" (click)="onClick()">
     <div class="btn-icon-row row">
       <i class="bi bi-unindent  btn-icon"></i></div>
     <div class="btn-text">
@@ -15,7 +15,7 @@
     <hr>
     <div class="card-text">
       <ul class="list-group">
-        <li *ngFor="let a of yours" class="list-group-item  card-your-list " (click)="actionModal.openModal(a, '#bfddf4')" >{{a.name}}</li>
+        <li *ngFor="let a of yours" class="list-group-item  card-your-list " (click)="actionModal.openModal(a, '#bfddf4')" >{{a.name | translate}}</li>
       </ul>
     </div>
   </div>
@@ -26,7 +26,7 @@
     <hr>
     <div class="card-text">
       <ul class="list-group">
-        <li *ngFor="let b of toSee" class="list-group-item card-see-list "  (click)="actionModal.openModal(b, '#acdba3')">{{b.name}}</li>
+        <li *ngFor="let b of toSee" class="list-group-item card-see-list "  (click)="actionModal.openModal(b, '#acdba3')">{{b.name | translate}}</li>
       </ul>
     </div>
   </div>
@@ -37,7 +37,7 @@
     <hr>
     <div class="card-text">
       <ul class="list-group">
-        <li *ngFor="let c of rejected" class="list-group-item card-reject-list"  (click)="actionModal.openModal(c, '#b1b1b1')" >{{c.name}}</li>
+        <li *ngFor="let c of rejected" class="list-group-item card-reject-list"  (click)="actionModal.openModal(c, '#b1b1b1')" >{{c.name | translate}}</li>
       </ul>
     </div>
   </div>

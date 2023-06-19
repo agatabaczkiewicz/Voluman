@@ -10,7 +10,7 @@ import {StorageService} from "../../services/storage.service";
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  path=["Główne Menu"];
+  path=["main.menu"];
 
   constructor(public router: Router,
               private modalService: NgbModal,
@@ -20,8 +20,9 @@ export class MenuComponent implements OnInit {
   }
   onClick(){
     this.storageService.saveData("userLogged","false")
+    this.storageService.notify({isRefresh : false});
     this.router.navigate(['login']);
-    window.location.reload();
+
   }
   onAvailabilityClick(){
 

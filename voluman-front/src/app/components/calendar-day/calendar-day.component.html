@@ -1,7 +1,7 @@
 <ng-template #calendarDayModal let-modal class="modal-content" let-c="close" let-d="dismiss">
   <div class="modal-content modal-content2">
     <div class="modal-header">
-      <h5 class="modal-title">Zmień dyżury w dniu {{date}}</h5>
+      <h5 class="modal-title">{{'change.shift' | translate}} {{date}}</h5>
       <button type="button" class="btn close" aria-label="Close" (click)="d('Cross click')">
         <i class="bi bi-x-lg"></i>
       </button>
@@ -14,7 +14,7 @@
           <div class="row     ">
             <div class="card ms-lg-5 " style="width: 10rem;font-size: medium">
               <div class="card-body">
-                <h5 class="card-title" style="width: 10rem;font-size: smaller">{{'load'|translate}}</h5>
+                <h5 class="card-title" style="font-size: smaller">{{'load'|translate}}</h5>
                 <div class="card-text">
                   <hr>
                   MAX: <b>{{maxLoad}}</b><br>

@@ -1,16 +1,16 @@
 <ng-template #actionModal let-modal class="modal-content"  let-c="close" let-d="dismiss" >
   <div class="modal-content modal-content2 " [ngStyle] ="{'background' : style}">
     <div class="modal-header">
-      <h5 class="modal-title">{{action.name}}</h5>
+      <h5 class="modal-title">{{action.name | translate }}</h5>
       <button type="button" class="btn close" aria-label="Close" (click)="d('Cross click')">
         <i class="bi bi-x-lg"></i>
       </button>      </div>
 
     <div class="modal-body">
       <div class="row align-items-center justify-content-md-center">
-        <p>{{action.place}}</p>
+        <p>{{action.place | translate}}</p>
         <p>{{action.startDate}} - {{action.endDate}}</p>
-        <p>{{action.description}}</p>
+        <p>{{action.description | translate}}</p>
                   <button *ngIf = "guest!='true'" type="button" class="btn btn-outline-dark menu-btn" (click)="onSmileClick()" [disabled]="action.reaction == ':)'" >
                     <div class="btn-icon-row row">
                       <i class="bi bi-emoji-smile btn-icon" ></i></div>

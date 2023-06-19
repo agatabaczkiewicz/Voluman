@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {BehaviorSubject} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -6,6 +7,13 @@ import { Injectable } from '@angular/core';
 export class StorageService {
 
   constructor() { }
+  private messageSource = new BehaviorSubject('default message');
+  public currentMessageSubscriber = this.messageSource.asObservable();
+
+
+  notify(message: any) {
+    this.messageSource.next(message)
+  }
 
   public saveData(key: string, value: string) {
     localStorage.setItem(key, value);

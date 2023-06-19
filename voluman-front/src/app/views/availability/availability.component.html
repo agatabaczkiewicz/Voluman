@@ -2,7 +2,7 @@
   <div class="col-sm-3  justify-content-md-center" style="max-width: 27rem;">
     <app-breadcrumb [path]=path [back]="'menu'"></app-breadcrumb>
     <div class="row">
-      <button type="button" class="btn btn-outline-dark menu-btn ms-lg-5" (click)="onClick()">
+      <button type="button" class="btn btn-outline-dark menu-btn ms-lg-5 break-all" (click)="onClick()">
         <div class="btn-icon-row row">
           <i class="bi bi-unindent btn-icon"></i></div>
         <div class="btn-text">
@@ -29,7 +29,7 @@
           <h5 class="card-title">{{'legend'|translate}}</h5>
           <div class="card-text">
             <b>Klik</b> {{'change.shift'|translate}}<br>
-            <b>Shift + Klik</b> {{'shift.add'|translate}}<br>
+            <b>Shift + {{'clik' | translate}}</b> {{'shift.add'|translate}}<br>
             <div class="line">
               <div class="square"></div><div> - {{'your.action.here'|translate}}</div></div>
             <div class="line">

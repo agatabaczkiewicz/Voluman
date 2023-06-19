@@ -10,7 +10,7 @@ import {StorageService} from "./services/storage.service";
 })
 export class AppComponent implements OnDestroy{
   title = 'Voluman';
-  path=["Główne menu","Dostępność"];
+  path=["main.menu","availability"];
   constructor(private translate: TranslateService,
               private jsonFilesService: JsonFilesService,
               private storageService: StorageService){
@@ -20,8 +20,8 @@ export class AppComponent implements OnDestroy{
     this.jsonFilesService.getDataFromFiles();
   }
 
-  changeLanguage(){
-
+  changeLanguage(event:string){
+    this.translate.use(event);
   }
   ngOnDestroy() {
     this.storageService.clearData();

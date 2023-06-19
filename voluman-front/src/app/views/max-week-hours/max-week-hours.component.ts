@@ -11,7 +11,7 @@ import {ToastService} from "../../services/toast.service";
   styleUrls: ['./max-week-hours.component.scss']
 })
 export class MaxWeekHoursComponent {
-  path=["Główne Menu", "Dostępność", "Maksymalne obciążenie"];
+  path=["main.menu", "availability", "max.load"];
 
   maxNow = new FormControl('');
   max1 = new FormControl('');
@@ -65,7 +65,7 @@ export class MaxWeekHoursComponent {
       max3: this.max3.value,
       max4: this.max4.value,
     }))
-    this.toastService.show('Maksymalne obciążenie zostały zapisane',{ classname: 'bg-success text-light'});
+    this.toastService.show('max.load.save',{ classname: 'bg-success text-light'});
   }
   onClick(){
     this.router.navigate(['menu']);

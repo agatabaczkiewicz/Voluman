@@ -27,7 +27,7 @@ export class GuestFormComponent {
   });
   onSaveClick(){
     this.router.navigate(['login']).then(() => {
-      this.toastService.show('Twoje zgłoszenie zostało wysłane', {classname: 'bg-success text-light'});
+      this.toastService.show('application.save', {classname: 'bg-success text-light'});
     })
   }
   onClick(){

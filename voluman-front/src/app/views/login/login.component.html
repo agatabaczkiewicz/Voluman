@@ -1,9 +1,9 @@
 <div class="container mt-lg-5 w-25">
   <div class="row justify-content-around">
-    <button class="btn btn-outline-dark w-75" type="button" (click)="onGuest()">Wejdź jako Gość</button>
+    <button class="btn btn-outline-dark w-75" type="button" (click)="onGuest()">{{'as.guest' | translate}}</button>
     <div class="col align-self-center mt-lg-5">
       <div class="card">
-        <h4 class="card-title text-center mt-3">Zaloguj się </h4>
+        <h4 class="card-title text-center mt-3">{{'log.btn' | translate }} </h4>
         <div class="card-body ">
           <form id="loginForm">
             <div class="form mb-3 ">
@@ -12,7 +12,7 @@
               <label  class="col-form-label">{{'password'|translate}}</label>
               <input type="password" [formControl]="password"  name="password" class="form-control" >
             </div>
-            <button class="btn btn-outline-dark" type="button" (click)="onLogIn()">Zaloguj się</button>
+            <button class="btn btn-outline-dark" type="button" (click)="onLogIn()">{{'log.btn' | translate }}</button>
           </form>
         </div>
       </div>

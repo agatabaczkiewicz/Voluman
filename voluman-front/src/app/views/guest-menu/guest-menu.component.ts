@@ -9,7 +9,7 @@ import {StorageService} from "../../services/storage.service";
 })
 export class GuestMenuComponent {
 
-  path=["Menu Gościa"];
+  path=["guest.menu"];
 
   constructor(private router:Router,
               private storageService: StorageService) {
@@ -18,7 +18,7 @@ export class GuestMenuComponent {
   onClick(){
     this.storageService.saveData("guest","false")
     this.router.navigate(['login']);
-    window.location.reload();
+
   }
   onActionsClick(){
     this.router.navigate(['action'])

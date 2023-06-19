@@ -11,7 +11,13 @@ export class ActionModalComponent {
 
   @ViewChild('actionModal') actionModal: ElementRef | undefined;
   @Input('guest') guest: string | null = "false";
-  action: ActionDescClass={};
+  action: ActionDescClass={ shortName:"",
+    name: "",
+    parentAction: "",
+    startDate: "",
+    endDate: "",
+    place: "",
+    description: ""};
   @Output() reactionEmit = new EventEmitter<ActionDescClass>();
   style = 'blue';
   constructor(private modalService: NgbModal) {

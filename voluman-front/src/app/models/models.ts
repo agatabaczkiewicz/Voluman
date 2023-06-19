@@ -25,13 +25,13 @@ export interface ActionClass{
   your:boolean
 }
 export interface ActionDescClass{
-  shortName?: string,
-  name?: string,
-  parentAction?: string,
-  startDate?: string,
-  endDate?: string,
-  place?: string,
-  description?: string,
+  shortName: string,
+  name: string,
+  parentAction: string,
+  startDate: string,
+  endDate: string,
+  place: string,
+  description: string,
   reaction?:string,
 }
 export enum EventTypes {

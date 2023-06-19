@@ -21,7 +21,7 @@ export class AvailabilityComponent implements OnInit {
     this.getDataStorage();
   }
 
-  path = ["Główne Menu", "Dstępność", "Terminy"];
+  path = ["main.menu", "availability", "dates.term"];
   days: NeedClass[] = [];
 
   ngOnInit(): void {
@@ -30,7 +30,7 @@ export class AvailabilityComponent implements OnInit {
 
   onSaveClick() {
     this.storageService.saveData('availability', JSON.stringify(this.calendar?.needs));
-    this.toastService.show('Terminy Zostały zapisane',{ classname: 'bg-success text-light'});
+    this.toastService.show('shofts.save',{ classname: 'bg-success text-light'});
   }
 
   onUnDoClick() {
