@@ -1,7 +1,7 @@
 <div #Calendar class="container justify-content-center ">
 
       <div class="row">
-        <div class="col-sm-1 "  style="text-align: center" *ngIf="!isSchedule">
+        <div class="col-sm-1 "  style="text-align: center" *ngIf="false">
           <div class="row td-custom border">
             <button class="btn btn-sm btn-light p-0"><i class="bi bi-caret-left-fill arrow-icon"></i></button>
         </div>
@@ -32,7 +32,7 @@
                                    [needSlot]=shift [scheduleSlot]="schedule.schedule[i+week].slots[j]"></app-cell-schedule>
             </div>
         </div>
-        <div class="col-sm-1 "  style="text-align: center" *ngIf="!isSchedule">
+        <div class="col-sm-1 "  style="text-align: center" *ngIf="false">
           <div class="row td-custom border">
                  <button class="btn btn-sm btn-light p-0 end-0" (click)="onNextWeekClick()"><i class="bi bi-caret-right-fill arrow-icon"></i></button>
           </div>

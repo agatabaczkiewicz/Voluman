@@ -30,7 +30,7 @@ export class AvailabilityComponent implements OnInit {
 
   onSaveClick() {
     this.storageService.saveData('availability', JSON.stringify(this.calendar?.needs));
-    this.toastService.show('shofts.save',{ classname: 'bg-success text-light'});
+    this.toastService.show('Terminy zostały zapisane',{ classname: 'bg-success text-light'});
   }
 
   onUnDoClick() {

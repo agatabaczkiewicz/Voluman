@@ -56,7 +56,7 @@ export class ActionsComponent implements OnInit, OnDestroy {
   deleteFromList(action: ActionDescClass){
     let index = this.toSee.findIndex(x=> x.name == action.name);
     if (action.reaction == ":)" || action.reaction == ":|"){
-      this.toastService.show('actions.added',{ classname: 'bg-success text-light'});
+      this.toastService.show('Akcja została dodana do Twoich akcji',{ classname: 'bg-success text-light'});
       if(index == -1){
         index = this.rejected.findIndex(x=> x.name == action.name);
         this.rejected.splice(index, 1);
@@ -75,7 +75,7 @@ export class ActionsComponent implements OnInit, OnDestroy {
       }
       this.toSee.splice(index, 1);
       this.rejected.push(action);
-      this.toastService.show('actions.delete',{ classname: 'bg-success text-light'});
+      this.toastService.show('Akcja została usunięta z Twoich akcji',{ classname: 'bg-success text-light'});
 
     }
   }

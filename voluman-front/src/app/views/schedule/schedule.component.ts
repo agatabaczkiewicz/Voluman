@@ -19,6 +19,7 @@ export class ScheduleComponent implements OnInit {
               private router:Router,
               public toastService: ToastService) {
     let fromStorage = this.storageService.getData("schedule");
+
     if(fromStorage != null) {
       this.schedule = JSON.parse(fromStorage) as ScheduleClass;
       this.v = this.schedule.schedule;
@@ -50,7 +51,7 @@ export class ScheduleComponent implements OnInit {
     this.storageService.saveData("schedule",JSON.stringify(this.schedule));
 
 
-    this.toastService.show('weekplan.accept', {
+    this.toastService.show('Plan tygodnia został zaakceptowany', {
       classname: 'bg-success text-light'
     });
 

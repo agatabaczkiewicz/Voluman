@@ -5,7 +5,7 @@
             "name": "mtp.barek",
             "parentAction": "MTP",
             "startDate": "15-05-2022",
-            "endDate": "30-06-2023",
+            "endDate": "30-06-2024",
             "place": "mtp.place",
             "description": "mtp.bar.dsc"
         },
@@ -14,7 +14,7 @@
             "name": "Ua.pack",
             "parentAction": null,
             "startDate": "15-05-2022",
-            "endDate": "30-06-2023",
+            "endDate": "30-06-2024",
             "place": "mtp.place",
             "description": "ua.pack.dsc",
             "reaction": ":)"
@@ -24,7 +24,7 @@
             "name": "mtp.info",
             "parentAction": "MTP",
             "startDate": "15-05-2022",
-            "endDate": "30-06-2023",
+            "endDate": "30-06-2024",
             "place": "mtp.place",
             "description": "mtp.info.dsc"
         }

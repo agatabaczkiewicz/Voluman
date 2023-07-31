@@ -71,7 +71,7 @@ export class CalendarComponent implements OnInit {
   }
   getWeekDay (startDate: Date, thisWeek:boolean){
     let nextMonday = new Date()
-    if(thisWeek) {
+    if(!thisWeek) {
       nextMonday.setDate(startDate.getDate() + ((7-startDate.getDay())%7+1) % 7);
     }else{
       nextMonday.setDate(startDate.getDate() + (7 - startDate.getDay()) % 7 + 1);
