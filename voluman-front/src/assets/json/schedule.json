@@ -475,7 +475,7 @@
                   "action": "Pacz",
                   "need": 5,
                   "scheduled": 5,
-                  "your": true
+                  "your": false
                 }
               ]
             },
@@ -583,7 +583,7 @@
                       "action": "Pacz",
                       "need": 5,
                       "scheduled": 5,
-                      "your": true
+                      "your": false
                     }
                   ]
                 },
