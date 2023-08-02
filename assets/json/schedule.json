@@ -1,6 +1,6 @@
 {
-    "maxLoad": 16,
-    "load": 14,
+    "maxLoad": 6,
+    "load": 6,
     "schedule": [
         {
             "date": "31.07",
@@ -57,8 +57,8 @@
                 {
                   "action": "Pacz",
                   "need": 5,
-                  "scheduled": 5,
-                  "your": true
+                  "scheduled": 4,
+                  "your": false
                 },
                 {
                   "action": "Pacz",
@@ -77,7 +77,7 @@
                   "action": "Pacz",
                   "need": 5,
                   "scheduled": 5,
-                  "your": false
+                  "your": true
                 }
               ]
             },
@@ -90,7 +90,7 @@
                   "action": "Pacz",
                   "need": 5,
                   "scheduled": 5,
-                  "your": false
+                  "your": true
                 }
               ]
             },
@@ -103,7 +103,7 @@
                   "action": "Pacz",
                   "need": 5,
                   "scheduled": 5,
-                  "your": false
+                  "your": true
                 }
               ]
             },
@@ -116,7 +116,7 @@
                   "action": "Pacz",
                   "need": 5,
                   "scheduled": 5,
-                  "your": false
+                  "your": true
                 }
               ]
             }
@@ -146,7 +146,7 @@
                   "action": "Pacz",
                   "need": 5,
                   "scheduled": 5,
-                  "your": true
+                  "your": false
                 },
                 {
                   "action": "Pacz",
@@ -178,7 +178,7 @@
                   "action": "Pacz",
                   "need": 5,
                   "scheduled": 5,
-                  "your": true
+                  "your": false
                 },
                 {
                   "action": "Pacz",
@@ -222,7 +222,7 @@
                 {
                   "action": "Pacz",
                   "need": 5,
-                  "scheduled": 5,
+                  "scheduled": 4,
                   "your": false
                 }
               ]
@@ -266,7 +266,7 @@
                   "action": "Pacz",
                   "need": 5,
                   "scheduled": 5,
-                  "your": true
+                  "your": false
                 }
               ]
             },
@@ -292,7 +292,7 @@
                   "action": "Pacz",
                   "need": 5,
                   "scheduled": 5,
-                  "your": true
+                  "your": false
                 }
               ]
             },
@@ -338,15 +338,8 @@
             {
               "startTime": "16:00",
               "endTime": "17:00",
-              "isShift": true,
-              "actions": [
-                {
-                  "action": "Pacz",
-                  "need": 5,
-                  "scheduled": 5,
-                  "your": false
-                }
-              ]
+              "isShift": false,
+              "actions": []
             }
           ]
         },
@@ -374,7 +367,7 @@
                   "action": "Pacz",
                   "need": 5,
                   "scheduled": 5,
-                  "your": true
+                  "your": false
                 }
               ]
             },
@@ -400,7 +393,7 @@
                   "action": "Pacz",
                   "need": 5,
                   "scheduled": 5,
-                  "your": true
+                  "your": false
                 }
               ]
             },
@@ -508,32 +501,61 @@
                   "action": "Pacz",
                   "need": 5,
                   "scheduled": 5,
-                  "your": true
+                  "your": false
                 }
               ]
             },
             {
               "startTime": "13:00",
               "endTime": "14:00",
-              "isShift": false,
-              "actions": []
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": false
+                }
+              ]
             },
             {
               "startTime": "14:00",
               "endTime": "15:00",
-              "isShift": false,
-              "actions": []
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": true
+                }
+              ]
             },
             {
               "startTime": "15:00",
               "endTime": "16:00",
-              "actions": []
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": true
+                }
+              ]
             },
             {
               "startTime": "16:00",
               "endTime": "17:00",
-              "isShift": false,
-              "actions": []
+              "isShift": true,
+              "actions": [
+                {
+                  "action": "Pacz",
+                  "need": 5,
+                  "scheduled": 5,
+                  "your": true
+                }
+              ]
             }
           ]
         },
