@@ -65,7 +65,7 @@ export class MaxWeekHoursComponent {
       max3: this.max3.value,
       max4: this.max4.value,
     }))
-    this.toastService.show('max.load.save',{ classname: 'bg-success text-light'});
+    this.toastService.show('Maksymalne obciążenie zostały zapisane',{ classname: 'bg-success text-light'});
   }
   onClick(){
     this.router.navigate(['menu']);
